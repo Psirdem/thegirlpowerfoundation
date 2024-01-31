@@ -3,22 +3,17 @@
 import Image from "next/image";
 import logo from "../public/assets/images/logo.svg";
 
-import { ProjectMenuItems } from "./ProjectMenuItems";
-import { AboutMenuItems } from "./AboutMenuItems";
+import ProjectMenuItems from "./ProjectMenuItems";
+import AboutMenuItems from "./AboutMenuItems";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
-
-const menu = [
-  { label: "Home", href: "/" },
-  { label: "Contact", href: "/contact" },
-];
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="uppercase text-sm font-medium tracking-wider">
+    <nav className="uppercase text-sm font-semibold tracking-wider">
       <div className="max-w-screen-xl mx-auto px-8 py-4 flex gap-8 lg:justify-between  items-center">
         <div className="lg:hidden block">
           <MobileNav />

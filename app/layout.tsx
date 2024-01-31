@@ -6,14 +6,8 @@ import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
+  weight: ["400", "500", "600", "700", "900"],
   variable: "--font-montserrat",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-inter",
 });
 
 const myFont = localFont({
@@ -35,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${myFont.variable} ${inter.variable} antialiased`}
+      className={`${montserrat.variable} ${myFont.variable}  antialiased`}
     >
       <body>
         <Navbar />

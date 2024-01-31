@@ -3,11 +3,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { AlignRight, Facebook } from "lucide-react";
+import { AlignRight, Facebook, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { AboutMenuItems } from "./AboutMenuItems";
-import { ProjectMenuItems } from "./ProjectMenuItems";
+import AboutMenuItems from "./AboutMenuItems";
+import ProjectMenuItems from "./ProjectMenuItems";
 import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
@@ -17,7 +17,7 @@ const MobileNav = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="outline">
-          <AlignRight />
+          <Menu className="text-redColor" />
         </Button>
       </SheetTrigger>
       <SheetContent
