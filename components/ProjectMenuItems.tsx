@@ -39,14 +39,14 @@ export const ProjectMenuItems = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="uppercase font-bold">
+          <NavigationMenuTrigger className="uppercase font-medium">
             Projects
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="flex flex-col gap-4 p-5 w-64 ">
               {components.map(({ title, href }) => (
                 <Link
-                  className="font-bold hover:text-greenColor duration-500 transition-all"
+                  className="font-medium hover:text-greenColor  border-greenColor duration-500 transition-all"
                   key={title}
                   href={href}
                 >
