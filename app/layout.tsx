@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
   variable: "--font-montserrat",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-inter",
 });
 
 const myFont = localFont({
@@ -28,9 +35,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${myFont.variable} antialiased`}
+      className={`${montserrat.variable} ${myFont.variable} ${inter.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
