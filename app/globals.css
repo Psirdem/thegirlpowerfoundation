@@ -77,7 +77,8 @@
   }
 }
 
-html {
+body {
+  font-family: var(--font-poppins);
   font-family: var(--font-montserrat);
 }
 
@@ -86,4 +87,31 @@ h2,
 h3,
 h4 {
   font-family: var(--font-edosz);
+}
+
+.showcase {
+  background-image: url("../public/assets/images/hero-img.webp");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(208, 31, 57, 0.7);
+  background-image: linear-gradient(
+    90deg,
+    rgba(28, 28, 28, 0.75) 0%,
+    rgba(255, 255, 255, 0) 58%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }

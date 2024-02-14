@@ -3,12 +3,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { AlignRight, Facebook, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import AboutMenuItems from "./AboutMenuItems";
 import ProjectMenuItems from "./ProjectMenuItems";
-import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -21,7 +21,7 @@ const MobileNav = () => {
         </Button>
       </SheetTrigger>
       <SheetContent
-        className="flex flex-col gap-10 items-start justify-center"
+        className="flex flex-col gap-10 items-start justify-center text-blackColor"
         side="left"
       >
         <ul className="flex flex-col gap-8">
