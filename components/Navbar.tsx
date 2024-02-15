@@ -13,8 +13,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="uppercase text-blackColor text-sm font-semibold tracking-wider">
-      <div className="max-w-screen-2xl mx-auto px-8 py-4 flex gap-8 lg:justify-between  items-center">
+    <nav className="uppercase text-blackColor text-sm font-semibold tracking-wider w-full">
+      <div className="max-w-screen-xl mx-auto px-8 py-4 flex gap-8 lg:justify-between  items-center">
         <div className="lg:hidden block">
           <MobileNav />
         </div>
