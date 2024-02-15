@@ -119,3 +119,13 @@ h4 {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+#donate {
+  background-image: linear-gradient(
+      to right,
+      rgba(253, 198, 0, 0.92),
+      rgba(253, 198, 0, 0.92)
+    ),
+    url("../public/assets/images/hero-img.webp");
+  background-size: cover;
+}

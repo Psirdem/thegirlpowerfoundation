@@ -1,4 +1,6 @@
 import AccessSection from "@/components/AccessSection";
+import DonationSection from "@/components/DonationSection";
+import HomeSection from "@/components/HomeSection";
 import ImpactSection from "@/components/ImpactSection";
 import ProjectSection from "@/components/ProjectSection";
 import Showcase from "@/components/Showcase";
@@ -8,12 +10,8 @@ const HomePage = () => {
   return (
     <>
       <Showcase />
-      <main className="max-w-screen-2xl mx-auto px-10 py-8">
-        <AccessSection />
-        <ProjectSection />
-        <ImpactSection />
-        <SupportSection />
-      </main>
+      <HomeSection />
+      <DonationSection />
     </>
   );
 };

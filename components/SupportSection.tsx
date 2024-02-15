@@ -21,6 +21,7 @@ const SupportSection = () => {
           opacity: 0,
           duration: 1,
           stagger: 0.2,
+          ease: "power3.in",
         },
         scrollTrigger: {
           trigger: "#support",
@@ -52,7 +53,7 @@ const SupportSection = () => {
   return (
     <section
       id="support"
-      className="my-12 text-blackColor"
+      className="mt-16 text-blackColor"
       ref={supportContainer}
     >
       <div className="title">

@@ -18,6 +18,7 @@ const ProjectSection = () => {
           duration: 1,
           opacity: 0,
           stagger: 0.2,
+          ease: "power3.out",
         },
         scrollTrigger: {
           trigger: "#carousel",

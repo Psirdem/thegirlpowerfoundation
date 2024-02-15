@@ -24,6 +24,7 @@ const ImpactSection = () => {
           duration: 1,
           opacity: 0,
           stagger: 0.2,
+          ease: "circ",
         },
         scrollTrigger: {
           trigger: "#impact",
