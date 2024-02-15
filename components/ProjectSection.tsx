@@ -4,6 +4,9 @@ import { useRef } from "react";
 import ProjectCarousel from "./ProjectCarousel";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjectSection = () => {
   const carouselContainer = useRef(null);
@@ -30,7 +33,11 @@ const ProjectSection = () => {
   );
 
   return (
-    <section id="carousel" className="my-10" ref={carouselContainer}>
+    <section
+      id="carousel"
+      className="my-10 text-blackColor"
+      ref={carouselContainer}
+    >
       <div className="title mb-8">
         <h2 className="text-2xl lg:text-4xl">Our Projects</h2>
         <div className="line bg-redColor w-10 h-1 inline-block mr-1"></div>

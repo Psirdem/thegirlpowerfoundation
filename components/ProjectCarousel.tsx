@@ -60,17 +60,17 @@ const ProjectCarousel = () => {
       }}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.leave}
-      className="w-full max-w-screen-xl"
+      className="w-full"
     >
       <CarouselContent className="flex justify-between gap-4">
         {projects.map(({ title, description, image, url }, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div>
-              <Card className="flex flex-col gap-8 rounded-xl overflow-hidden h-[30rem]">
+              <Card className="flex flex-col gap-8 rounded-xl overflow-hidden h-[33rem]">
                 <Link href={url}>
                   <Image src={image} width={600} height={500} alt={title} />
                 </Link>
-                <CardContent className="flex flex-col items-center justify-center text-center">
+                <CardContent className="flex flex-col gap-2 items-center justify-center text-center">
                   <h3 className="text-xl">{title}</h3>
                   <p>{description}</p>
                   <div className="mt-10">
