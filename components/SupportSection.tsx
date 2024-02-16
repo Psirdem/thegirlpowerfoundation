@@ -62,8 +62,8 @@ const SupportSection = () => {
         <div className="bg-yellowColor w-10 h-1 inline-block mr-1"></div>
         <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
       </div>
-      <div className="flex flex-col lg:flex-row gap-10">
-        <div className="w-2/3 mt-10 flex flex-col gap-4">
+      <div className="flex flex-col lg:flex-row items-center gap-10">
+        <div className="mt-10 flex flex-col gap-4">
           <p>
             65% of the mothers we support are in employment, compared to less
             than 30% in 2013

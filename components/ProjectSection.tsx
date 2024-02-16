@@ -27,7 +27,7 @@ const ProjectSection = () => {
       });
 
       tl.from(["#carousel .title h2", "#carousel .title .line"], {
-        x: "70",
+        x: "50",
       });
     },
     { scope: carouselContainer }

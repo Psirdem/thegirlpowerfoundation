@@ -9,41 +9,41 @@ import { useRef } from "react";
 const Showcase = () => {
   const container = useRef(null);
 
-  useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        defaults: {
-          opacity: 0,
-          ease: "back.inOut",
-          yoyo: true,
-          stagger: {
-            each: 0.2,
-            from: "random",
-          },
-          duration: 1,
-        },
-      });
+  // useGSAP(
+  //   () => {
+  //     const tl = gsap.timeline({
+  //       defaults: {
+  //         opacity: 0,
+  //         ease: "back.inOut",
+  //         yoyo: true,
+  //         stagger: {
+  //           each: 0.2,
+  //           from: "random",
+  //         },
+  //         duration: 1,
+  //       },
+  //     });
 
-      tl.from(
-        [
-          "header .sub-text",
-          "header .heading",
-          "header .main-text",
-          "header .btns",
-        ],
-        {
-          yPercent: -100,
-          scale: 1.2,
-        }
-      );
-    },
-    { scope: container }
-  );
+  //     tl.from(
+  //       [
+  //         "header .sub-text",
+  //         "header .heading",
+  //         "header .main-text",
+  //         "header .btns",
+  //       ],
+  //       {
+  //         yPercent: -100,
+  //         scale: 1.2,
+  //       }
+  //     );
+  //   },
+  //   { scope: container }
+  // );
 
   return (
     <header className="showcase text-white" ref={container}>
       <div className="overlay">
-        <div className="max-w-screen-xl mx-auto container p-8 flex flex-col justify-center items-center gap-8 h-screen text-center w-[85%] lg:w-[70%]">
+        <div className="max-w-6xl mx-auto container p-8 flex flex-col justify-center items-center gap-8 h-screen text-center">
           <p className="sub-text text-yellowColor lg:text-2xl uppercase tracking-wider font-semibold">
             <span>Education</span>&mdash; <span>Food</span>&mdash;
             <span>Shelter</span>

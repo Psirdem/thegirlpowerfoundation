@@ -33,7 +33,7 @@ const ImpactSection = () => {
       });
 
       tl.from(["#impact .title h2", "#impact .title div"], {
-        xPercent: 30,
+        yPercent: -60,
       })
         .fromTo(
           "#impact .box-1",

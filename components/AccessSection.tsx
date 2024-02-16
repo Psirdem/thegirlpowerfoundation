@@ -32,14 +32,14 @@ const AccessSection = () => {
         .from(
           ["#access .title h2", "#access .title div"],
           {
-            x: "70",
+            x: "50",
           },
           "<"
         )
         .from(
           "#access p",
           {
-            x: "70",
+            x: "50",
             delay: 0.1,
           },
           "<"
@@ -47,7 +47,7 @@ const AccessSection = () => {
         .from(
           "#access .btn",
           {
-            x: "80",
+            x: "50",
             delay: 0.2,
           },
           "<"
@@ -75,7 +75,7 @@ const AccessSection = () => {
             <div className="bg-yellowColor w-10 h-1 inline-block mr-1"></div>
             <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
           </div>
-          <div className="my-8 lg:text-xl">
+          <div className="my-8">
             <p className="font-bold mb-4">
               Around 30% of children in the Kumasi region do not have access to
               basic education.
