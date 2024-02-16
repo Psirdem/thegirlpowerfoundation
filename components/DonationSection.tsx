@@ -34,7 +34,7 @@ const DonationSection = () => {
   return (
     <section
       id="donate"
-      className="my-12 text-blackColor bg-yellowColor grid grid-cols-1 lg:grid-cols-2 gap-10 p-10"
+      className="mt-12 text-blackColor bg-yellowColor grid grid-cols-1 lg:grid-cols-2 gap-10 p-10"
       ref={container}
     >
       <div className="donate-img">

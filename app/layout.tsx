@@ -3,6 +3,7 @@ import { Montserrat, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Providers from "./providers";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -39,7 +40,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${poppins.variable} ${myFont.variable}  antialiased`}
       >
         <Navbar />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
