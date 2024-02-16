@@ -2,7 +2,7 @@ import DonationSection from "@/components/DonationSection";
 import HomeSection from "@/components/HomeSection";
 import NewsLetter from "@/components/NewsLetter";
 import Showcase from "@/components/Showcase";
-import SocialSection from "@/components/SocialSection";
+import Footer from "@/components/SocialSection";
 
 const HomePage = () => {
   return (
@@ -11,7 +11,7 @@ const HomePage = () => {
       <HomeSection />
       <DonationSection />
       <NewsLetter />
-      <SocialSection />
+      <Footer />
     </>
   );
 };
