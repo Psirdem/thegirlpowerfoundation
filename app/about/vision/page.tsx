@@ -18,15 +18,22 @@ const VisionPage = () => {
         defaults: { opacity: 0, stagger: 0.2, duration: 1, ease: "circ" },
       });
 
-      tl.from(".vision .vision-img", {
-        yPercent: 80,
-      }).from(
-        ".vision .vision-text",
-        {
-          yPercent: -80,
-        },
-        "<"
-      );
+      tl.from(".vision header h2", {
+        y: "-100",
+        scale: 1.2,
+        ease: "bounce",
+      })
+
+        .from(".vision .vision-img", {
+          yPercent: 80,
+        })
+        .from(
+          ".vision .vision-text",
+          {
+            yPercent: -80,
+          },
+          "<"
+        );
     },
     { scope: container }
   );

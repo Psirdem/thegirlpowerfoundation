@@ -21,9 +21,22 @@ const TeamPage = () => {
         defaults: { opacity: 0, stagger: 0.2, duration: 1, ease: "circ" },
       });
 
-      tl.from(".team .team-box", {
-        yPercent: -30,
-      });
+      tl.from(".team header h2", {
+        y: "-100",
+        scale: 1.2,
+        ease: "bounce",
+      })
+        .from(
+          ".team header p",
+          {
+            y: "100",
+            ease: "elastic",
+          },
+          "<"
+        )
+        .from(".team .team-box", {
+          yPercent: -30,
+        });
 
       const tl1 = gsap.timeline({
         defaults: { opacity: 0, stagger: 0.2, duration: 1, ease: "circ" },

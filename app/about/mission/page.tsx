@@ -18,15 +18,17 @@ const MissionPage = () => {
         defaults: { opacity: 0, stagger: 0.2, duration: 1, ease: "circ" },
       });
 
-      tl.from(".mission .mission-img", {
-        yPercent: 80,
-      }).from(
-        ".mission .mission-text",
-        {
-          yPercent: -80,
-        },
-        "<"
-      );
+      tl.from(".mission header h2", { y: "-100", scale: 1.2, ease: "bounce" })
+        .from(".mission .mission-img", {
+          yPercent: 80,
+        })
+        .from(
+          ".mission .mission-text",
+          {
+            yPercent: -80,
+          },
+          "<"
+        );
     },
     { scope: container }
   );

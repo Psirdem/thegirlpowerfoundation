@@ -41,10 +41,10 @@ const menuItems: { title: string; href: string }[] = [
     title: "Our Team",
     href: "/about/team",
   },
-  {
-    title: "Brightling Academy",
-    href: "/projects/academy",
-  },
+  // {
+  //   title: "Brightling Academy",
+  //   href: "/projects/academy",
+  // },
   {
     title: "The Girl Power Project",
     href: "/projects/girl-power",
@@ -181,14 +181,14 @@ const NavBar = () => {
               base: "gap-4",
             }}
           >
-            <DropdownItem key="vision">
-              <Link className="font-semibold" href="/projects/academy">
-                Brightlingsea Academy
-              </Link>
-            </DropdownItem>
             <DropdownItem key="usage_metrics">
               <Link className="font-semibold" href="/projects/girl-power">
                 The Girl Power Project
+              </Link>
+            </DropdownItem>
+            <DropdownItem key="production_ready">
+              <Link className="font-semibold" href="/projects/futures">
+                Brighter Futures
               </Link>
             </DropdownItem>
             <DropdownItem key="production_ready">
@@ -196,11 +196,12 @@ const NavBar = () => {
                 Start Up
               </Link>
             </DropdownItem>
-            <DropdownItem key="production_ready">
-              <Link className="font-semibold" href="/projects/brighter-futures">
-                Brighter Futures
+
+            {/* <DropdownItem key="vision">
+              <Link className="font-semibold" href="/projects/academy">
+                Brightlingsea Academy
               </Link>
-            </DropdownItem>
+            </DropdownItem> */}
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
