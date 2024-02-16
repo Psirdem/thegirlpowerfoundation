@@ -1,8 +1,8 @@
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Providers from "./providers";
 
 const montserrat = Montserrat({
@@ -39,8 +39,10 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${poppins.variable} ${myFont.variable}  antialiased`}
       >
-        <Navbar />
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -128,4 +128,5 @@ h4 {
     ),
     url("../public/assets/images/hero-img.webp");
   background-size: cover;
+  background-repeat: no-repeat;
 }

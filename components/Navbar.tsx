@@ -30,6 +30,18 @@ const menuItems: { title: string; href: string }[] = [
     href: "/",
   },
   {
+    title: "Our Vision",
+    href: "/about/vision",
+  },
+  {
+    title: "Our Mission",
+    href: "/about/mission",
+  },
+  {
+    title: "Our Team",
+    href: "/about/team",
+  },
+  {
     title: "Brightling Academy",
     href: "/projects/academy",
   },
@@ -126,7 +138,7 @@ const NavBar = () => {
           >
             <DropdownItem key="vision">
               <Link
-                href="/vision"
+                href="/about/vision"
                 className={` ${
                   pathname === "/our-vision"
                     ? "text-greenColor font-bold"
@@ -137,12 +149,12 @@ const NavBar = () => {
               </Link>
             </DropdownItem>
             <DropdownItem key="usage_metrics">
-              <Link href="/mission" className="font-semibold uppercase">
+              <Link href="/about/mission" className="font-semibold uppercase">
                 Our Mission
               </Link>
             </DropdownItem>
             <DropdownItem key="production_ready">
-              <Link href="/team" className="font-semibold uppercase">
+              <Link href="/about/team" className="font-semibold uppercase">
                 Our Team
               </Link>
             </DropdownItem>
