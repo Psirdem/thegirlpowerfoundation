@@ -30,7 +30,7 @@ const NewsLetter = () => {
   useGSAP(
     () => {
       const tl = gsap.timeline({
-        defaults: { opacity: 0, duration: 1 },
+        defaults: { opacity: 0, duration: 1, stagger: 0.2, ease: "power3.in" },
         scrollTrigger: "#news",
       });
 
