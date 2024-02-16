@@ -1,24 +1,24 @@
 "use client";
 
-import { useRef } from "react";
-import ProjectCarousel from "./ProjectCarousel";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useRef } from "react";
+import ProjectCarousel from "./ProjectCarousel";
 
 const ProjectSection = () => {
   const carouselContainer = useRef(null);
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
         defaults: {
           duration: 1,
           opacity: 0,
           stagger: 0.2,
-          ease: "power3.out",
+          ease: "back",
         },
         scrollTrigger: {
           trigger: "#carousel",

@@ -6,18 +6,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import { useRef } from "react";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const AccessSection = () => {
   const accessContainer = useRef(null);
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
         defaults: {
           duration: 1,
           opacity: 0,
           stagger: 0.2,
+          ease: "back",
         },
         scrollTrigger: {
           trigger: "#access",

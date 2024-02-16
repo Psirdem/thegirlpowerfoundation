@@ -15,8 +15,6 @@ import { Send } from "lucide-react";
 import { useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const NewsLetter = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [size, setSize] = useState("full");
@@ -29,6 +27,8 @@ const NewsLetter = () => {
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
         defaults: { opacity: 0, duration: 1, stagger: 0.2, ease: "power3.in" },
         scrollTrigger: "#news",

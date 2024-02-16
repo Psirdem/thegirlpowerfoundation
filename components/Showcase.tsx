@@ -9,36 +9,36 @@ import { useRef } from "react";
 const Showcase = () => {
   const container = useRef(null);
 
-  // useGSAP(
-  //   () => {
-  //     const tl = gsap.timeline({
-  //       defaults: {
-  //         opacity: 0,
-  //         ease: "back.inOut",
-  //         yoyo: true,
-  //         stagger: {
-  //           each: 0.2,
-  //           from: "random",
-  //         },
-  //         duration: 1,
-  //       },
-  //     });
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        defaults: {
+          opacity: 0,
+          ease: "back.inOut",
+          yoyo: true,
+          stagger: {
+            each: 0.2,
+            from: "random",
+          },
+          duration: 1,
+        },
+      });
 
-  //     tl.from(
-  //       [
-  //         "header .sub-text",
-  //         "header .heading",
-  //         "header .main-text",
-  //         "header .btns",
-  //       ],
-  //       {
-  //         yPercent: -100,
-  //         scale: 1.2,
-  //       }
-  //     );
-  //   },
-  //   { scope: container }
-  // );
+      tl.from(
+        [
+          "header .sub-text",
+          "header .heading",
+          "header .main-text",
+          "header .btns",
+        ],
+        {
+          yPercent: -100,
+          scale: 1.2,
+        }
+      );
+    },
+    { scope: container }
+  );
 
   return (
     <header className="showcase text-white" ref={container}>

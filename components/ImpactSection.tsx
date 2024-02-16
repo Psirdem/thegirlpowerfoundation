@@ -4,27 +4,27 @@ import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import { useRef } from "react";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import impactImg from "../public/assets/images/impact-img.webp";
 import impactImg1 from "../public/assets/images/our-impact-1.webp";
 import impactImg2 from "../public/assets/images/our-impact-2.webp";
 import impactImg3 from "../public/assets/images/our-impact-3.webp";
-import impactImg from "../public/assets/images/impact-img.webp";
-import gsap from "gsap";
-import Link from "next/link";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const ImpactSection = () => {
   const impactContainer = useRef(null);
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
         defaults: {
           duration: 1,
           opacity: 0,
           stagger: 0.2,
-          ease: "circ",
+          ease: "back",
         },
         scrollTrigger: {
           trigger: "#impact",
@@ -109,7 +109,7 @@ const ImpactSection = () => {
             <Image
               src={impactImg2}
               width={100}
-              height={100}
+              height={30}
               className="rounded-full"
               style={{ boxShadow: "-4px 4px 0px 0px #FDC500" }}
               alt="impact-2"
@@ -141,10 +141,10 @@ const ImpactSection = () => {
         </div>
         <div className="box-4 flex flex-col gap-8">
           <Image
-            className="rounded-lg"
+            className="rounded-lg w-[700px]"
             src={impactImg}
-            width={800}
-            height={600}
+            // width={800}
+            // height={600}
             alt="impact"
           />
           <div>

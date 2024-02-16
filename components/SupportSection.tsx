@@ -88,10 +88,10 @@ const SupportSection = () => {
         </div>
         <div className="support">
           <Image
-            className="rounded-xl shadow-xl"
+            className="rounded-xl shadow-xl w-[850px]"
             src={supportImg}
-            width={800}
-            height={600}
+            // width={800}
+            // height={600}
             alt="support"
           />
         </div>
