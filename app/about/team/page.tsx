@@ -56,8 +56,8 @@ const TeamPage = () => {
   return (
     <section className="team h-52 lg:h-72 text-blackColor" ref={container}>
       <header className="text-white gap-4 text-center z-10 flex justify-center items-center h-full flex-col px-4">
-        <h2 className="text-5xl">Our Team.</h2>
-        <p className="lg:text-lg lg:w-1/2">
+        <h2 className="text-4xl lg:text-5xl">Our Team.</h2>
+        <p className="lg:text-lg text-sm lg:w-1/2">
           Our Team is made up of a group of passionate and devoted employees,
           trustees and volunteers both in Ghana and the UK.
         </p>

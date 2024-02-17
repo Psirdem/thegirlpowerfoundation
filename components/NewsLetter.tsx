@@ -63,7 +63,12 @@ const NewsLetter = () => {
           >
             <Send size={30} /> Subscribe
           </Button>
-          <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="m-4">
+          <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            className="m-4"
+            placement="center"
+          >
             <ModalContent>
               {onClose => (
                 <>
