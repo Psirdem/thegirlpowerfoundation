@@ -59,7 +59,7 @@ const Showcase = () => {
           <div className="btns flex flex-col lg:flex-row gap-4 lg:gap-12 uppercase lg:text-xl font-bold">
             <Link
               className="bg-greenColor px-12 py-3 rounded-lg hover:translate-y-1 transition-all duration-500 hover:opacity-80 shadow-2xl"
-              href="/projects/academy"
+              href="#carousel"
             >
               Our Projects
             </Link>

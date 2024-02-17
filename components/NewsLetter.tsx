@@ -78,7 +78,7 @@ const NewsLetter = () => {
                     </h2>
                   </ModalHeader>
                   <ModalBody>
-                    <div className="flex flex-col w-full flex-wrap md:flex-nowrap gap-4">
+                    <form className="flex flex-col w-full flex-wrap md:flex-nowrap gap-4">
                       <Input
                         isRequired
                         type="email"
@@ -103,7 +103,7 @@ const NewsLetter = () => {
                         labelPlacement="outside"
                         className="border-2 rounded"
                       />
-                    </div>
+                    </form>
                   </ModalBody>
                   <ModalFooter>
                     <Button

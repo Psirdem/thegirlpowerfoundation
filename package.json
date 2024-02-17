@@ -21,14 +21,17 @@
     "embla-carousel-react": "^8.0.0-rc22",
     "framer-motion": "^11.0.5",
     "gsap": "^3.12.5",
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.320.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.8",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
