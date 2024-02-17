@@ -67,7 +67,7 @@ const menuItems: { title: string; href: string }[] = [
   },
   {
     title: "Contact",
-    href: "/contact",
+    href: "/contact-us",
   },
 ];
 
@@ -235,7 +235,7 @@ const NavBar = () => {
                 ? "text-greenColor font-semibold"
                 : "text-sm font-medium"
             } `}
-            href="/contact"
+            href="/contact-us"
           >
             Contact
           </Link>
