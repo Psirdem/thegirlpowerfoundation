@@ -2,16 +2,25 @@
 
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import Map from "@/components/Map";
 import NewsLetter from "@/components/NewsLetter";
 import { useGSAP } from "@gsap/react";
+import { Skeleton } from "@nextui-org/react";
 import gsap from "gsap";
-import "leaflet/dist/leaflet.css";
-import { useRef } from "react";
+import dynamic from "next/dynamic";
+import { useMemo, useRef } from "react";
 
 const ContactUsPage = () => {
   const container1 = useRef(null);
   const container2 = useRef(null);
+
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("@/components/Map"), {
+        loading: () => <Skeleton className="rounded h-[500px]" />,
+        ssr: false,
+      }),
+    []
+  );
 
   useGSAP(
     () => {
@@ -61,7 +70,9 @@ const ContactUsPage = () => {
             <div className="bg-yellowColor w-10 h-1 inline-block mr-1"></div>
             <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
           </div>
-          <div>{/* <Map /> */}</div>
+          <div>
+            <Map />
+          </div>
         </div>
       </section>
       <NewsLetter />
