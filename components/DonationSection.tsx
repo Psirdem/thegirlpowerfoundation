@@ -39,7 +39,7 @@ const DonationSection = () => {
     >
       <div className="donate-img">
         <Image
-          className="rounded-lg shadow-2xl overflow-hidden w-[700px] h-auto"
+          className="rounded-lg shadow-2xl border-2 border-redColor overflow-hidden w-[700px] h-auto"
           src={supportImg}
           alt="support"
         />

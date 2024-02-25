@@ -45,7 +45,7 @@ const MissionPage = () => {
             alt="mission"
             width={700}
             height={600}
-            className="mission-img rounded-xl shadow-xl order-1 lg:order-[0]"
+            className="mission-img rounded-xl shadow-2xl order-1 lg:order-[0] border-2 border-yellowColor"
           />
           <p className="mission-text text-xl lg:text-3xl">
             Our mission is to provide{" "}

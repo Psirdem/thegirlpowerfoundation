@@ -51,7 +51,7 @@ const VisionPage = () => {
               alt="vision"
               width={700}
               height={600}
-              className="vision-img rounded-xl shadow-xl order-1 lg:order-[0]"
+              className="vision-img rounded-xl shadow-2xl order-1 lg:order-[0] border-2 border-greenColor"
             />
             <p className="vision-text text-xl lg:text-3xl">
               Our vision is for every

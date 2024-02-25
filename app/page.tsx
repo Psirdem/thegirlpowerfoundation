@@ -11,7 +11,6 @@ const HomePage = () => {
       <HomeSection />
       <DonationSection />
       <NewsLetter />
-      <Footer />
     </>
   );
 };

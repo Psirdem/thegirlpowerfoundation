@@ -141,10 +141,8 @@ const ImpactSection = () => {
         </div>
         <div className="box-4 flex flex-col gap-8">
           <Image
-            className="rounded-lg w-[700px]"
+            className="rounded-lg w-[700px] border-redColor border-2 shadow-2xl"
             src={impactImg}
-            // width={800}
-            // height={600}
             alt="impact"
           />
           <div>

@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import TypewriterEffectDemo from "./TypewriterEffect";
 
 const ImagesSlider = ({
   images,
@@ -186,10 +188,7 @@ const HeroImageSlider = () => {
             <span>Education</span>&mdash; <span>Food</span>&mdash;
             <span>Shelter</span>
           </motion.p>
-          <h1 className="heading text-4xl lg:text-6xl">
-            Every child deserves the opportunity to realise their full
-            potential.
-          </h1>
+          <TypewriterEffectDemo />
           <p className="main-text lg:text-2xl font-medium">
             We are working with the most disadvantaged children and young people
             in Ghana to help them break the cycle of poverty.
@@ -203,7 +202,7 @@ const HeroImageSlider = () => {
             </Link>
 
             <Link
-              className="bg-yellowColor text-blackColor px-8 py-4 rounded-lg hover:translate-y-1 transition-all duration-500 hover:opacity-80 shadow-2xl"
+              className="bg-yellowColor text-blackColor px-8 py-4 rounded hover:translate-y-1 transition-all duration-500 hover:opacity-80 shadow-2xl"
               href="/get-involved"
             >
               Get involved

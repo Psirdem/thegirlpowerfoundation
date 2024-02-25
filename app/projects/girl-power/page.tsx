@@ -92,7 +92,7 @@ const GirlPowerProjectPage = () => {
               alt="coast"
               width={600}
               height={600}
-              className="img rounded-xl shadow-2xl"
+              className="img rounded-xl shadow-2xl border-2 border-redColor"
             />
           </div>
           <div className="text flex-1 lg:text-xl flex flex-col gap-6">
@@ -139,7 +139,6 @@ const GirlPowerProjectPage = () => {
               <li className="flex items-start gap-2">
                 <img src="/assets/icons/check.svg" alt="check" />
                 <span>
-                  {" "}
                   Daily care from our incredible, all-female, Girl Power Centre
                   team
                 </span>
@@ -171,7 +170,7 @@ const GirlPowerProjectPage = () => {
               src="/assets/images/beach.webp"
               width={700}
               height={700}
-              className="rounded-xl shadow-2xl"
+              className="rounded-xl shadow-2xl border-2 border-yellowColor"
               alt="beach"
             />
           </div>

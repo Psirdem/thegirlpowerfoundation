@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Providers from "./providers";
 import Script from "next/script";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
