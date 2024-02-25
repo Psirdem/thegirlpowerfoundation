@@ -1,13 +1,52 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const images = [
+  { src: "/assets/images/beach.webp" },
+  { src: "/assets/images/cta-img.webp" },
+  { src: "/assets/images/mission.webp" },
+  { src: "/assets/images/students-1.webp" },
+  { src: "/assets/images/vision.webp" },
+  { src: "/assets/images/hero-img.webp" },
+  { src: "/assets/images/coast-img.webp" },
+  { src: "/assets/images/staff.webp" },
+  { src: "/assets/images/support-img.webp" },
+  { src: "/assets/images/vision-img-1.webp" },
+  { src: "/assets/images/hero-img.webp" },
+  { src: "/assets/images/students-3.webp" },
+  { src: "/assets/images/vision.webp" },
+  { src: "/assets/images/coast-img.webp" },
+  { src: "/assets/images/mission.webp" },
+  { src: "/assets/images/students-2.webp" },
+  { src: "/assets/images/support-img.webp" },
+  { src: "/assets/images/vision-img-1.webp" },
+];
+
 const Gallery = () => {
   const container = useRef(null);
+
+  useEffect(() => {
+    let lightbox = new PhotoSwipeLightbox({
+      gallery: "#my-test-gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+    });
+    lightbox.init();
+
+    return () => {
+      lightbox.destroy();
+      // lightbox = null;
+    };
+  }, []);
 
   useGSAP(
     () => {
@@ -32,23 +71,44 @@ const Gallery = () => {
         <div className="bg-yellowColor w-10 h-1 inline-block mr-1"></div>
         <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10">
-        <Image
+      <div
+        id="my-test-gallery"
+        className="pswp-gallery grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-5"
+      >
+        {images.map((image, index) => (
+          <a
+            href={image.src}
+            data-pswp-width={700}
+            data-pswp-height={450}
+            key={`galleryID  -  ${index}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src={image.src}
+              alt={image.src}
+              className="rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
+              width={600}
+              height={400}
+            />
+          </a>
+        ))}
+        {/* <Image
           src="/assets/images/beach.webp"
           alt="beach"
           className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
           width={800}
           height={800}
-        />
+        /> */}
 
-        <Image
+        {/* <Image
           src="/assets/images/cta-img.webp"
           width={500}
           height={500}
           alt="coast"
           className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-blackColor"
-        />
-        <Image
+        /> */}
+        {/* <Image
           src="/assets/images/hero-img.webp"
           width={500}
           height={500}
@@ -118,7 +178,7 @@ const Gallery = () => {
           height={500}
           alt="vision"
           className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
-        />
+        /> */}
       </div>
     </div>
   );
