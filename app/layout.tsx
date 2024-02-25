@@ -26,10 +26,10 @@ const myFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Porridge and Pens",
+  title: "The Girl Power Foundation",
   description:
     "We provide food and education for some of the poorest children in Ghana through our Brightlingsea School, Girl Power and Fruit Drop projects.",
-  icons: "/app/favicon-32x32.png",
+  icons: "/app/favicon-96x96.png",
 };
 
 export default function RootLayout({
