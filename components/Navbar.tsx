@@ -41,10 +41,6 @@ const menuItems: { title: string; href: string }[] = [
     title: "Our Team",
     href: "/about/team",
   },
-  // {
-  //   title: "Brightling Academy",
-  //   href: "/projects/academy",
-  // },
   {
     title: "The Girl Power Project",
     href: "/projects/girl-power",
@@ -94,8 +90,8 @@ const NavBar = () => {
           <Image
             src={logo}
             alt="website logo"
-            width={150}
-            height={150}
+            width={500}
+            height={500}
             priority
           />
         </a>
@@ -196,12 +192,6 @@ const NavBar = () => {
                 Start Up
               </Link>
             </DropdownItem>
-
-            {/* <DropdownItem key="vision">
-              <Link className="font-semibold" href="/projects/academy">
-                Brightlingsea Academy
-              </Link>
-            </DropdownItem> */}
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
@@ -231,7 +221,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             className={`${
-              pathname === "/contact"
+              pathname === "/contact-us"
                 ? "text-greenColor font-semibold"
                 : "text-sm font-medium"
             } `}
@@ -278,17 +268,20 @@ const NavBar = () => {
         </button>
         <ul className="flex gap-10 items-center">
           <li className="bg-redColor p-1 rounded-full ">
-            <a href="">
+            <a href="" target="_blank">
               <img src="/assets/icons/facebook-icon.svg" alt="facebook icon" />
             </a>
           </li>
           <li className="bg-redColor p-1 rounded-full ">
-            <a href="">
+            <a href="https://twitter.com/TheGirlPowerGH" target="_blank">
               <img src="/assets/icons/x-icon.svg" alt="x icon" />
             </a>
           </li>
           <li className="bg-redColor p-1 rounded-full ">
-            <a href="">
+            <a
+              href="https://www.instagram.com/thegirlpowerfoundation_gh"
+              target="_blank"
+            >
               <img
                 src="/assets/icons/instagram-icon.svg"
                 alt="instagram icon"
@@ -296,7 +289,10 @@ const NavBar = () => {
             </a>
           </li>
           <li className="bg-redColor p-1 rounded-full ">
-            <a href="">
+            <a
+              href="https://www.youtube.com/channel/UCrV1px3tpwDWM2ODXC47TVQ"
+              target="_blank"
+            >
               <img src="/assets/icons/youtube-icon.svg" alt="youtube iocn" />
             </a>
           </li>

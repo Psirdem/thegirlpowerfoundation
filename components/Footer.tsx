@@ -6,6 +6,9 @@ import Link from "next/link";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 /* eslint-disable @next/next/no-img-element */
 const Footer = () => {
@@ -51,7 +54,7 @@ const Footer = () => {
           </a>
           <ul className="list flex items-center gap-5">
             <li className="bg-redColor p-1 rounded-full ">
-              <a href="">
+              <a href="" target="_blank">
                 <img
                   src="/assets/icons/facebook-icon.svg"
                   alt="facebook icon"
@@ -59,12 +62,15 @@ const Footer = () => {
               </a>
             </li>
             <li className="bg-redColor p-1 rounded-full ">
-              <a href="">
+              <a href="https://twitter.com/TheGirlPowerGH" target="_blank">
                 <img src="/assets/icons/x-icon.svg" alt="x icon" />
               </a>
             </li>
             <li className="bg-redColor p-1 rounded-full ">
-              <a href="">
+              <a
+                href="https://www.instagram.com/thegirlpowerfoundation_gh"
+                target="_blank"
+              >
                 <img
                   src="/assets/icons/instagram-icon.svg"
                   alt="instagram icon"
@@ -72,7 +78,10 @@ const Footer = () => {
               </a>
             </li>
             <li className="bg-redColor p-1 rounded-full ">
-              <a href="">
+              <a
+                href="https://www.youtube.com/channel/UCrV1px3tpwDWM2ODXC47TVQ"
+                target="_blank"
+              >
                 <img src="/assets/icons/youtube-icon.svg" alt="youtube iocn" />
               </a>
             </li>
