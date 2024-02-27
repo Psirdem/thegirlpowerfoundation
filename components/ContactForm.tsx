@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 import { Spinner } from "@nextui-org/react";
 
 const ContactForm = () => {
-  const [isSending, setIsSending] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const container1 = useRef(null);
   const form = useRef<HTMLFormElement>(null);
 
@@ -38,21 +38,21 @@ const ContactForm = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
-    setIsSending(true);
+    setIsSubmitting(true);
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         form.current!,
         {
-          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_ID as string,
         }
       )
       .then(
         () => {
           form.current?.reset();
           toast.success("Email Sent Successfully!");
-          setIsSending(false);
+          setIsSubmitting(false);
         },
         error => {
           toast.error("Oops, Something Went Wrong!");
@@ -113,8 +113,9 @@ const ContactForm = () => {
               className="w-44 font-bold bg-redColor text-white uppercase rounded-sm shadow-2xl btn"
               size="lg"
               type="submit"
+              disabled={isSubmitting}
             >
-              {isSending ? "Submitting..." : "Submit"}
+              {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
           </form>
         </div>

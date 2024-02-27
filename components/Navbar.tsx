@@ -239,11 +239,6 @@ const NavBar = () => {
         </button>
         <ul className="flex gap-10 items-center">
           <li className="bg-redColor p-1 rounded-full ">
-            <a href="" target="_blank">
-              <img src="/assets/icons/facebook-icon.svg" alt="facebook icon" />
-            </a>
-          </li>
-          <li className="bg-redColor p-1 rounded-full ">
             <a href="https://twitter.com/TheGirlPowerGH" target="_blank">
               <img src="/assets/icons/x-icon.svg" alt="x icon" />
             </a>
