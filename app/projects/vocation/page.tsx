@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import "../../../app/styles/startupStyles.css";
+import "@/app/styles/vocationStyles.css";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -13,8 +13,8 @@ import Footer from "@/components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const StartUpPage = () => {
-  const container = useRef(null);
+const VacationalTraining = () => {
+  const vocationContainer = useRef(null);
 
   useGSAP(
     () => {
@@ -22,12 +22,12 @@ const StartUpPage = () => {
         defaults: { opacity: 0, stagger: 0.2, duration: 1, ease: "circ" },
       });
 
-      tl.from(".start-up header h2", {
+      tl.from(".vocation header h2", {
         y: "-100",
         scale: 1.2,
         ease: "bounce",
       }).from(
-        ".start-up header p",
+        ".vocation header p",
         {
           y: "100",
           ease: "elastic",
@@ -69,14 +69,17 @@ const StartUpPage = () => {
           "<"
         );
     },
-    { scope: container }
+    { scope: vocationContainer }
   );
 
   return (
-    <section className="start-up h-52 lg:h-72 text-blackColor" ref={container}>
+    <section
+      className="vocation h-52 lg:h-72 text-blackColor"
+      ref={vocationContainer}
+    >
       <header className="text-white gap-4 text-center z-10 flex justify-center items-center h-full flex-col px-4">
-        <h2 className="text text-4xl lg:text-5xl ">Start up Project.</h2>
-        <p className="start-up-text lg:text-lg text-sm lg:w-1/2">
+        <h2 className="text text-4xl lg:text-5xl ">Vocational Training.</h2>
+        <p className="vacation-text lg:text-lg text-sm lg:w-1/2">
           More resilient and sustainable communities are critical to breaking
           the cycle of poverty.
         </p>
@@ -85,7 +88,7 @@ const StartUpPage = () => {
         <div className="top-box flex flex-col lg:flex-row gap-10 justify-between items-center p-4">
           <div>
             <Image
-              src="/assets/images/coast-img.webp"
+              src="/assets/images/startup.webp"
               width={600}
               height={600}
               alt="future"
@@ -137,7 +140,7 @@ const StartUpPage = () => {
           </div>
           <div>
             <Image
-              src="/assets/images/cta-img.webp"
+              src="/assets/images/hands.webp"
               width={600}
               height={600}
               alt="future"
@@ -153,4 +156,4 @@ const StartUpPage = () => {
   );
 };
 
-export default StartUpPage;
+export default VacationalTraining;

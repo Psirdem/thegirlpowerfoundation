@@ -46,20 +46,16 @@ const menuItems: { title: string; href: string }[] = [
     href: "/projects/girl-power",
   },
   {
+    title: "Vocational Training",
+    href: "/projects/vocation",
+  },
+  {
     title: "Start Up",
     href: "/projects/start-up",
   },
   {
     title: "Brighter Future",
     href: "/projects/futures",
-  },
-  {
-    title: "Impact",
-    href: "/impact",
-  },
-  {
-    title: "Get Involved",
-    href: "/girl-involved",
   },
   {
     title: "Contact",
@@ -77,7 +73,7 @@ const NavBar = () => {
 
   return (
     <Navbar
-      className="py-4"
+      className="py-8"
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
@@ -87,13 +83,7 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarBrand className="mr-10">
         <a href="/">
-          <Image
-            src={logo}
-            alt="website logo"
-            width={500}
-            height={500}
-            priority
-          />
+          <Image src={logo} alt="website logo" />
         </a>
       </NavbarBrand>
       <NavbarContent
@@ -188,36 +178,17 @@ const NavBar = () => {
               </Link>
             </DropdownItem>
             <DropdownItem key="production_ready">
+              <Link className="font-semibold" href="/projects/vocation">
+                Vocational Training
+              </Link>
+            </DropdownItem>
+            <DropdownItem key="production_ready">
               <Link className="font-semibold" href="/projects/start-up">
                 Start Up
               </Link>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <NavbarItem>
-          <Link
-            href="/impact"
-            className={`${
-              pathname === "/impact"
-                ? "text-greenColor font-semibold"
-                : "text-sm font-medium"
-            } `}
-          >
-            Impact
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            className={`${
-              pathname === "/get-involved"
-                ? "text-greenColor font-semibold"
-                : "text-sm font-medium"
-            } `}
-            href="/get-involved"
-          >
-            Get Involved
-          </Link>
-        </NavbarItem>
         <NavbarItem>
           <Link
             className={`${
@@ -233,7 +204,7 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <button className="uppercase lg:flex hidden gap-2 bg-yellowColor p-4 rounded-lg font-bold tracking-wider items-center hover:opacity-75 duration-500 transition-all">
+          <button className="uppercase lg:flex hidden gap-2 bg-yellowColor px-8 py-2 rounded-lg font-bold tracking-wider items-center hover:opacity-75 duration-500 transition-all">
             <Image
               src="/assets/icons/heart.svg"
               alt="heart icon"
@@ -257,7 +228,7 @@ const NavBar = () => {
             </NavbarMenuItem>
           </div>
         ))}
-        <button className="uppercase flex gap-2 bg-yellowColor px-8 py-3 rounded-lg font-bold tracking-wider text-xl justify-center items-center hover:opacity-75 duration-500 transition-all my-10">
+        <button className="uppercase flex gap-2 bg-yellowColor px-8 py-2 rounded-lg font-bold tracking-wider text-xl justify-center items-center hover:opacity-75 duration-500 transition-all my-10">
           <Image
             src="/assets/icons/heart.svg"
             alt="heart icon"

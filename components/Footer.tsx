@@ -8,17 +8,25 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 /* eslint-disable @next/next/no-img-element */
 const Footer = () => {
-  const container = useRef(null);
+  const footerContainer = useRef(null);
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
-        defaults: { opacity: 0, duration: 1, ease: "back.in", stagger: 0.2 },
-        scrollTrigger: "#footer",
+        defaults: {
+          duration: 1,
+          opacity: 0,
+          stagger: 0.2,
+          ease: "back",
+        },
+        scrollTrigger: {
+          trigger: "#footer",
+          toggleActions: "play none play reverse",
+        },
       });
 
       tl.from(
@@ -33,14 +41,14 @@ const Footer = () => {
         }
       );
     },
-    { scope: container }
+    { scope: footerContainer }
   );
 
   return (
     <footer
       id="footer"
       className="max-w-screen-xl mx-auto px-10 py-8"
-      ref={container}
+      ref={footerContainer}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 my-10 place-items-center">
         <div className="image flex flex-col items-center justify-center gap-8">

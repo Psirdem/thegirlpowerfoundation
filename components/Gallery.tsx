@@ -17,18 +17,11 @@ const images = [
   { src: "/assets/images/students-1.webp" },
   { src: "/assets/images/vision.webp" },
   { src: "/assets/images/hero-img.webp" },
-  { src: "/assets/images/coast-img.webp" },
-  { src: "/assets/images/staff.webp" },
-  { src: "/assets/images/support-img.webp" },
-  { src: "/assets/images/vision-img-1.webp" },
-  { src: "/assets/images/hero-img.webp" },
   { src: "/assets/images/students-3.webp" },
-  { src: "/assets/images/vision.webp" },
   { src: "/assets/images/coast-img.webp" },
-  { src: "/assets/images/mission.webp" },
-  { src: "/assets/images/students-2.webp" },
   { src: "/assets/images/support-img.webp" },
   { src: "/assets/images/vision-img-1.webp" },
+  { src: "/assets/images/students-2.webp" },
 ];
 
 const Gallery = () => {
@@ -93,92 +86,6 @@ const Gallery = () => {
             />
           </a>
         ))}
-        {/* <Image
-          src="/assets/images/beach.webp"
-          alt="beach"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
-          width={800}
-          height={800}
-        /> */}
-
-        {/* <Image
-          src="/assets/images/cta-img.webp"
-          width={500}
-          height={500}
-          alt="coast"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-blackColor"
-        /> */}
-        {/* <Image
-          src="/assets/images/hero-img.webp"
-          width={500}
-          height={500}
-          alt="hero"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-redColor"
-        />
-
-        <Image
-          src="/assets/images/mission.webp"
-          width={500}
-          height={500}
-          alt="mission"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-yellowColor"
-        />
-        <Image
-          src="/assets/images/vision.webp"
-          width={500}
-          height={500}
-          alt="vision"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-redColor"
-        />
-        <Image
-          src="/assets/images/coast-img.webp"
-          width={500}
-          height={500}
-          alt="coast"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-blackColor"
-        />
-        <Image
-          src="/assets/images/staff.webp"
-          width={500}
-          height={500}
-          alt="staff"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
-        />
-        <Image
-          src="/assets/images/support-img.webp"
-          width={500}
-          height={500}
-          alt="support"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-yellowColor"
-        />
-        <Image
-          src="/assets/images/vision-img-1.webp"
-          width={500}
-          height={500}
-          alt="vision"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-redColor"
-        />
-        <Image
-          src="/assets/images/students-1.webp"
-          width={500}
-          height={500}
-          alt="vision"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-yellowColor"
-        />
-        <Image
-          src="/assets/images/students-2.webp"
-          width={500}
-          height={500}
-          alt="vision"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-blackColor"
-        />
-        <Image
-          src="/assets/images/students-3.webp"
-          width={500}
-          height={500}
-          alt="vision"
-          className="gallery-img rounded-lg hover:scale-95 duration-500 transition-all ease-in-out shadow-2xl border-2 border-greenColor"
-        /> */}
       </div>
     </div>
   );

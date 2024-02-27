@@ -91,7 +91,7 @@ const AccessSection = () => {
           <div className="btn">
             <Link
               className="bg-yellowColor uppercase font-bold px-10 py-3 rounded-lg shadow-lg hover:opacity-80 transition-all hover:translate-y-1 duration-500"
-              href="/projects/academy"
+              href="/projects"
             >
               All Projects
             </Link>

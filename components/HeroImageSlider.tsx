@@ -196,7 +196,7 @@ const HeroImageSlider = () => {
           <div className="btns flex flex-col md:flex-row gap-4 lg:gap-12 uppercase font-bold">
             <Link
               className="bg-greenColor px-8 py-4 rounded hover:translate-y-1 transition-all duration-500 hover:opacity-80 shadow-2xl"
-              href="#carousel"
+              href="/projects"
             >
               Our Projects
             </Link>
@@ -205,7 +205,7 @@ const HeroImageSlider = () => {
               className="bg-yellowColor text-blackColor px-8 py-4 rounded hover:translate-y-1 transition-all duration-500 hover:opacity-80 shadow-2xl"
               href="/get-involved"
             >
-              Get involved
+              Contact Us
             </Link>
           </div>
         </div>

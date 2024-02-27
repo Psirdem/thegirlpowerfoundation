@@ -10,7 +10,7 @@ import "../../../app/styles/missionStyles.css";
 import NewsLetter from "@/components/NewsLetter";
 
 const MissionPage = () => {
-  const container = useRef(null);
+  const missionContainer = useRef(null);
 
   useGSAP(
     () => {
@@ -30,11 +30,14 @@ const MissionPage = () => {
           "<"
         );
     },
-    { scope: container }
+    { scope: missionContainer }
   );
 
   return (
-    <section className="mission h-52 lg:h-72 text-blackColor" ref={container}>
+    <section
+      className="mission h-52 lg:h-72 text-blackColor"
+      ref={missionContainer}
+    >
       <header className="z-10 flex justify-center items-center h-full">
         <h2 className="text-white text-5xl">Our Mission.</h2>
       </header>

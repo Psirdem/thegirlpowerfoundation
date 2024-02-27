@@ -8,16 +8,16 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const DonationSection = () => {
-  const container = useRef(null);
+  const donateContainer = useRef(null);
 
   useGSAP(
     () => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const tl = gsap.timeline({
         defaults: { duration: 1, opacity: 0, stagger: 0.2, ease: "power4.in" },
-        scrollTrigger: "#donate",
+        scrollTrigger: { trigger: "#donate" },
       });
 
       tl.from("#donate .donate-img", { y: "30" }).from(
@@ -28,14 +28,14 @@ const DonationSection = () => {
         "<"
       );
     },
-    { scope: container }
+    { scope: donateContainer }
   );
 
   return (
     <section
       id="donate"
       className="mt-12 text-blackColor bg-yellowColor grid grid-cols-1 lg:grid-cols-2 gap-10 p-10"
-      ref={container}
+      ref={donateContainer}
     >
       <div className="donate-img">
         <Image

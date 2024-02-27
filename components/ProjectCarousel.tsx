@@ -25,6 +25,14 @@ const projects = [
     url: "/projects/girl-power",
     image: image1,
   },
+
+  {
+    title: "Start-Up Project",
+    description:
+      "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
+    url: "/projects/start-up",
+    image: image3,
+  },
   {
     title: "Brighter Futures Project",
     description:
@@ -33,10 +41,10 @@ const projects = [
     image: image2,
   },
   {
-    title: "Start-Up Project",
+    title: "Vacational Training",
     description:
       "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
-    url: "/projects/start-up",
+    url: "/projects/vocation",
     image: image3,
   },
 ];
@@ -56,7 +64,7 @@ const ProjectCarousel = () => {
     >
       <CarouselContent className="flex justify-between gap-4">
         {projects.map(({ title, description, image, url }, index) => (
-          <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/2">
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div>
               <Card className="flex flex-col gap-8 rounded-xl overflow-hidden h-[33rem] border-2 lg:h-[35rem] shadow-xl">
                 <Link href={url}>
