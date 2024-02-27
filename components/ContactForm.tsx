@@ -45,7 +45,7 @@ const ContactForm = () => {
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
         form.current!,
         {
-          publicKey: process.env.NEXT_PUBLIC_PUBLIC_ID as string,
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
         }
       )
       .then(
