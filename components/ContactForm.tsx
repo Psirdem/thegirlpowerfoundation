@@ -55,7 +55,9 @@ const ContactForm = () => {
           setIsSubmitting(false);
         },
         error => {
+          setIsSubmitting(false);
           toast.error("Oops, Something Went Wrong!");
+          console.log(error);
         }
       );
   };
