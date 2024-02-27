@@ -41,10 +41,17 @@ const projects = [
     image: image2,
   },
   {
-    title: "Vacational Training",
+    title: "Vocational Training",
     description:
       "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
     url: "/projects/vocation",
+    image: image3,
+  },
+  {
+    title: "Upcoming Projects",
+    description:
+      "View all the projects we've planned and have been working on so support and empower the girl child in various communities across the country.",
+    url: "/projects",
     image: image3,
   },
 ];
@@ -71,7 +78,7 @@ const ProjectCarousel = () => {
                   <Image src={image} alt={title} />
                 </Link>
                 <CardContent className="flex flex-col gap-2 items-center justify-center text-center">
-                  <h3 className="text-xl">{title}</h3>
+                  <h3 className="text-2xl">{title}</h3>
                   <p>{description}</p>
                   <div className="mt-10">
                     <Link
