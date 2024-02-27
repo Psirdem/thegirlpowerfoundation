@@ -3,10 +3,15 @@
 import { useGSAP } from "@gsap/react";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import gsap from "gsap";
-import { useRef } from "react";
+import { FormEvent, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { Spinner } from "@nextui-org/react";
 
 const ContactForm = () => {
+  const [isSending, setIsSending] = useState(false);
   const container1 = useRef(null);
+  const form = useRef<HTMLFormElement>(null);
 
   useGSAP(
     () => {
@@ -30,6 +35,31 @@ const ContactForm = () => {
     { scope: container1 }
   );
 
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    setIsSending(true);
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+        form.current!,
+        {
+          publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY as string,
+        }
+      )
+      .then(
+        () => {
+          form.current?.reset();
+          toast.success("Email Sent Successfully!");
+          setIsSending(false);
+        },
+        error => {
+          toast.error("Oops, Something Went Wrong!");
+        }
+      );
+  };
+
   return (
     <>
       <div className="contact mb-10" ref={container1}>
@@ -40,7 +70,11 @@ const ContactForm = () => {
           <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
         </div>
         <div className="mt-14">
-          <form className="flex flex-col w-full flex-wrap md:flex-nowrap gap-8">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col w-full flex-wrap md:flex-nowrap gap-8"
+          >
             <Input
               isRequired
               type="text"
@@ -49,6 +83,7 @@ const ContactForm = () => {
               labelPlacement="outside"
               variant="underlined"
               className="input"
+              name="user_name"
             />
 
             <Input
@@ -60,6 +95,7 @@ const ContactForm = () => {
               variant="underlined"
               description="We'll never share your email with anyone else."
               className="input"
+              name="email"
             />
             <Textarea
               variant="underlined"
@@ -67,12 +103,18 @@ const ContactForm = () => {
               labelPlacement="outside"
               placeholder="Enter your message"
               className="input col-span-12 md:col-span-6 mb-6 md:mb-0"
+              name="user_message"
             />
+            <p className="flex gap-2 text-center items-center font-bold italic">
+              <span> Field is required</span>
+              <span className="text-redColor">*</span>
+            </p>
             <Button
-              className="w-44 font-bold bg-redColor text-white text-xl uppercase rounded-sm shadow-2xl btn"
+              className="w-44 font-bold bg-redColor text-white uppercase rounded-sm shadow-2xl btn"
               size="lg"
+              type="submit"
             >
-              Submit
+              {isSending ? "Submitting..." : "Submit"}
             </Button>
           </form>
         </div>

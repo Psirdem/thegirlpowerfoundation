@@ -2,10 +2,12 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
+import { ToastContainer } from "react-toastify";
 import "./globals.css";
 import Providers from "./providers";
-import Script from "next/script";
-import Footer from "@/components/Footer";
+
+import "react-toastify/dist/ReactToastify.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -59,6 +61,12 @@ export default function RootLayout({
           <Navbar />
           {children}
         </Providers>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          closeOnClick
+          theme="light"
+        />
       </body>
     </html>
   );
