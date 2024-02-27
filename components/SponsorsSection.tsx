@@ -38,7 +38,7 @@ const SponsorsSection = () => {
   return (
     <section
       id="sponsor"
-      className="max-w-5xl mx-auto px-10 py-10 my-10 text-blackColor flex flex-col items-center"
+      className="max-w-5xl mx-auto px-10 py-10 text-blackColor flex flex-col items-center"
       ref={sponsorContainer}
     >
       <div className="title mb-8">
@@ -47,7 +47,7 @@ const SponsorsSection = () => {
         <div className="line bg-yellowColor w-10 h-1 inline-block mr-1"></div>
         <div className="line bg-greenColor w-10 h-1 inline-block mr-1"></div>
       </div>
-      <div className="flex items-center justify-between gap-10 text-4xl">
+      <div className="flex md:flex-row flex-col items-center justify-between gap-10 text-xl">
         <h3 className="text-redColor">Porridge & Pens</h3>
         <h3 className="text-greenColor">Children Salon</h3>
       </div>

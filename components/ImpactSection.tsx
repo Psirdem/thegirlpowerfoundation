@@ -163,7 +163,7 @@ const ImpactSection = () => {
           <div>
             <Link
               className="bg-redColor text-white uppercase font-bold px-10 py-3 rounded-lg shadow-lg hover:opacity-80 transition-all hover:translate-y-1 duration-500"
-              href="/impact"
+              href="/projects/girl-power"
             >
               View Impact
             </Link>
