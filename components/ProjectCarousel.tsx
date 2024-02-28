@@ -49,17 +49,11 @@ const projects = [
   },
   {
     title: "Upcoming Projects",
-    description: "Building Project,  Charity Gala",
+    description:
+      "We have many more projects still in the pipeline, some of which are, Charity Gala and The Building Project, so stay tuned. In the meantime, you can click on the button below to view all our other projects.",
     url: "/projects",
-    image: image3,
+    image: image2,
   },
-  // {
-  //   title: "Upcoming Projects",
-  //   description:
-  //     "View all the projects we've planned and have been working on so support and empower the girl child in various communities across the country.",
-  //   url: "/projects",
-  //   image: image3,
-  // },
 ];
 
 const ProjectCarousel = () => {
