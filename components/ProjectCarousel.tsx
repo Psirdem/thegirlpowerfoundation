@@ -49,11 +49,17 @@ const projects = [
   },
   {
     title: "Upcoming Projects",
-    description:
-      "View all the projects we've planned and have been working on so support and empower the girl child in various communities across the country.",
+    description: "Building Project,  Charity Gala",
     url: "/projects",
     image: image3,
   },
+  // {
+  //   title: "Upcoming Projects",
+  //   description:
+  //     "View all the projects we've planned and have been working on so support and empower the girl child in various communities across the country.",
+  //   url: "/projects",
+  //   image: image3,
+  // },
 ];
 
 const ProjectCarousel = () => {

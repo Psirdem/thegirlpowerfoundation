@@ -47,7 +47,7 @@ const SponsorsSection = () => {
         <div className="line bg-yellowColor w-10 h-1 inline-block mr-1"></div>
         <div className="line bg-greenColor w-10 h-1 inline-block mr-1"></div>
       </div>
-      <div className="flex md:flex-row flex-col items-center justify-between gap-10 text-xl">
+      <div className="flex md:flex-row flex-col items-center justify-between gap-4 md:gap-10 text-xl">
         <h3 className="text-redColor">Porridge & Pens</h3>
         <h3 className="text-greenColor">Children Salon</h3>
       </div>

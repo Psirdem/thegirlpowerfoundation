@@ -106,18 +106,19 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col items-center justify-between gap-10">
-        <address className="text-center flex flex-col items-center justify-center">
-          <p>Porridge and Pens © 2015 – {new Date().getFullYear()}</p>
-          <p>UK Registered Charity No. 1166497</p>
-          <ul>
-            <li>Porridge and Pens</li>
-            <li>1 Chapman Close,</li>
-            <li>Brightlingsea</li>
-            <li>Essex CO7 0FS</li>
-          </ul>
-        </address>
+
+        <div className="flex flex-col items-center justify-between gap-10">
+          <address className="text-center flex flex-col items-center justify-center">
+            <p>Porridge and Pens © 2015 – {new Date().getFullYear()}</p>
+            <p>UK Registered Charity No. 1166497</p>
+            <ul>
+              <li>Porridge and Pens</li>
+              <li>1 Chapman Close,</li>
+              <li>Brightlingsea</li>
+              <li>Essex CO7 0FS</li>
+            </ul>
+          </address>
+        </div>
         <SponsorsSection />
       </div>
     </footer>
