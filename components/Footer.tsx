@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import logo from "../public/assets/images/logo.svg";
-import Link from "next/link";
-import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import Link from "next/link";
+import { useRef } from "react";
+import logo from "../public/assets/images/logo.svg";
 import SponsorsSection from "./SponsorsSection";
 
 /* eslint-disable @next/next/no-img-element */

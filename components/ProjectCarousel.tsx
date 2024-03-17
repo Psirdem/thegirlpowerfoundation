@@ -12,12 +12,22 @@ import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 import { useRef } from "react";
 
+import image4 from "@/public/assets/images/building-project.webp";
+import image1 from "@/public/assets/images/impact-img.webp";
+import image from "@/public/assets/images/project-future.webp";
+import image3 from "@/public/assets/images/project-hands.webp";
+import image2 from "@/public/assets/images/upcoming-projects.webp";
+import image5 from "@/public/assets/images/vocational-project-img.webp";
 import Image from "next/image";
-import image1 from "../public/assets/images/impact-img.webp";
-import image2 from "../public/assets/images/project-future.webp";
-import image3 from "../public/assets/images/project-hands.webp";
 
 const projects = [
+  {
+    title: "Upcoming Projects",
+    description:
+      "We have many more projects still in the pipeline, some of which are, Charity Gala and The Building Project, so stay tuned. In the meantime, you can click on the button below to view all our other projects.",
+    url: "/projects",
+    image: image2,
+  },
   {
     title: "The Girl Power Project",
     description:
@@ -38,21 +48,21 @@ const projects = [
     description:
       "Brighter Futures, a new project for 2023, provides bright young men with the resources to attend university.",
     url: "/projects/futures",
-    image: image2,
+    image: image,
   },
   {
     title: "Vocational Training",
     description:
       "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
     url: "/projects/vocation",
-    image: image3,
+    image: image5,
   },
   {
-    title: "Upcoming Projects",
+    title: "Building Projects",
     description:
-      "We have many more projects still in the pipeline, some of which are, Charity Gala and The Building Project, so stay tuned. In the meantime, you can click on the button below to view all our other projects.",
-    url: "/projects",
-    image: image2,
+      "We are currently, undergoing a building project, which will be our permanent facility once it is completed. It includes offices and bed spaces for some of our beneficiaries.",
+    url: "/projects/build",
+    image: image4,
   },
 ];
 

@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
-import supportImg from "../public/assets/images/support-img.webp";
-import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+import supportImg from "../public/assets/images/support-img.webp";
 
 const SupportSection = () => {
   const supportContainer = useRef(null);
@@ -77,14 +76,14 @@ const SupportSection = () => {
             We work with local communities in Ghana to deliver our services,
             drive prosperity and create employment opportunities.
           </p>
-          <div className="mt-10 btn">
+          {/* <div className="mt-10 btn">
             <Link
               className="bg-greenColor text-white uppercase font-bold px-10 py-3 rounded-lg shadow-lg hover:opacity-80 transition-all hover:translate-y-1 duration-500"
               href="/projects/academy"
             >
               Learn More
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="support">
           <Image

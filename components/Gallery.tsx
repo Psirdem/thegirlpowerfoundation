@@ -2,19 +2,22 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
+  { src: "/assets/images/gp-4.webp" },
   { src: "/assets/images/beach.webp" },
+  { src: "/assets/images/gp-3.webp" },
   { src: "/assets/images/cta-img.webp" },
+  { src: "/assets/images/gp-1.webp" },
   { src: "/assets/images/mission.webp" },
-  { src: "/assets/images/students-1.webp" },
+  { src: "/assets/images/gp-2.webp" },
   { src: "/assets/images/vision.webp" },
   { src: "/assets/images/hero-img.webp" },
   { src: "/assets/images/students-3.webp" },

@@ -58,6 +58,10 @@ const menuItems: { title: string; href: string }[] = [
     href: "/projects/futures",
   },
   {
+    title: "Building Project",
+    href: "/projects/build",
+  },
+  {
     title: "Contact",
     href: "/contact-us",
   },
@@ -185,6 +189,11 @@ const NavBar = () => {
             <DropdownItem key="production_ready">
               <Link className="font-semibold" href="/projects/start-up">
                 Start Up
+              </Link>
+            </DropdownItem>
+            <DropdownItem key="production_ready">
+              <Link className="font-semibold" href="/projects/build">
+                Building Project
               </Link>
             </DropdownItem>
           </DropdownMenu>

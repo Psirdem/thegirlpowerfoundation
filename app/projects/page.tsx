@@ -9,6 +9,9 @@ import { CardContent } from "@/components/ui/card";
 import image1 from "@/public/assets/images/impact-img.webp";
 import image2 from "@/public/assets/images/project-future.webp";
 import image3 from "@/public/assets/images/project-hands.webp";
+import image4 from "@/public/assets/images/building-project.webp";
+import image5 from "@/public/assets/images/vocational-project-img.webp";
+
 import { Card } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,7 +47,14 @@ const projects = [
     description:
       "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
     url: "/projects/vocation",
-    image: image3,
+    image: image5,
+  },
+  {
+    title: "Building Project",
+    description:
+      "We are currently, undergoing a building project, which will be our permanent facility once it is completed. It includes offices and bed spaces for some of our beneficiaries.",
+    url: "/projects/build",
+    image: image4,
   },
 ];
 

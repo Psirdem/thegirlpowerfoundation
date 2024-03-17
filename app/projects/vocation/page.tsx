@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
 import "@/app/styles/vocationStyles.css";
-import { useRef } from "react";
+import DonationSection from "@/components/DonationSection";
+import Footer from "@/components/Footer";
+import NewsLetter from "@/components/NewsLetter";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import DonationSection from "@/components/DonationSection";
-import NewsLetter from "@/components/NewsLetter";
-import Footer from "@/components/Footer";
+import Image from "next/image";
+import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -66,12 +66,44 @@ const TeamPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto container px-10 py-8 mt-10 gap-10">
         <div className="team-box flex flex-col gap-6 items-center justify-center text-center">
           <Image
+            src="/assets/images/jemma.png"
+            alt="CEO/Founder"
+            width={200}
+            height={100}
+            className="rounded-[100%]"
+            style={{ boxShadow: "-4px 4px 0px 4px #006c3e" }}
+          />
+          <div className="flex flex-col gap-2">
+            <h3 className="text-2xl">Jemma Williams</h3>
+            <small className="italic font-semibold text-gray-500">
+              CEO/Founder
+            </small>
+          </div>
+        </div>
+        <div className="team-box flex flex-col gap-6 items-center justify-center text-center">
+          <Image
+            src="/assets/images/lia.png"
+            alt="operations manager"
+            width={220}
+            height={100}
+            className="rounded-[100%]"
+            style={{ boxShadow: "-4px 4px 0px 4px #d01f39" }}
+          />
+          <div className="flex flex-col gap-2">
+            <h3 className="text-2xl">Lia Smith</h3>
+            <small className="italic font-semibold text-gray-500">
+              Operations Manager
+            </small>
+          </div>
+        </div>
+        <div className="team-box flex flex-col gap-6 items-center justify-center text-center">
+          <Image
             src="/assets/images/opoku.webp"
             alt="country director"
             width={200}
             height={100}
             className="rounded-[100%]"
-            style={{ boxShadow: "-4px 4px 0px 4px #d01f39" }}
+            style={{ boxShadow: "-4px 4px 0px 4px #1d1d1d" }}
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl">Claudia Durowaa Opoku-Mensah</h3>
@@ -135,7 +167,7 @@ const TeamPage = () => {
             width={200}
             height={100}
             className="rounded-[100%]"
-            style={{ boxShadow: "-4px 4px 0px 4px #006c3e" }}
+            style={{ boxShadow: "-4px 4px 0px 4px #fdc500" }}
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl">Raymond Assan</h3>
@@ -151,7 +183,7 @@ const TeamPage = () => {
             width={200}
             height={100}
             className="rounded-[100%]"
-            style={{ boxShadow: "-4px 4px 0px 4px #1d1d1d" }}
+            style={{ boxShadow: "-4px 4px 0px 4px #d01f39" }}
           />
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl">Shadrach Dome</h3>

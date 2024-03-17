@@ -2,7 +2,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import TypewriterEffectDemo from "./TypewriterEffect";
@@ -161,8 +161,9 @@ const ImagesSlider = ({
 
 const HeroImageSlider = () => {
   const images = [
+    "/assets/images/gp-4.webp",
     "/assets/images/hero-img.webp",
-    "/assets/images/hands.webp",
+    "/assets/images/gp-3.webp",
     "/assets/images/coast-img.webp",
     "/assets/images/mission.webp",
   ];

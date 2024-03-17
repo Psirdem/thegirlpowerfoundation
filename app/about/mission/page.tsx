@@ -2,12 +2,12 @@
 
 import DonationSection from "@/components/DonationSection";
 import Footer from "@/components/Footer";
+import NewsLetter from "@/components/NewsLetter";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { useRef } from "react";
 import "../../../app/styles/missionStyles.css";
-import NewsLetter from "@/components/NewsLetter";
 
 const MissionPage = () => {
   const missionContainer = useRef(null);

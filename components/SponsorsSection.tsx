@@ -1,9 +1,9 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
 
 const SponsorsSection = () => {
   const sponsorContainer = useRef(null);

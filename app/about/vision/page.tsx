@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
-import "../../../app/styles/visionStyle.css";
 import DonationSection from "@/components/DonationSection";
 import Footer from "@/components/Footer";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import gsap from "gsap";
 import NewsLetter from "@/components/NewsLetter";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import Image from "next/image";
+import { useRef } from "react";
+import "../../../app/styles/visionStyle.css";
 
 const VisionPage = () => {
   const container = useRef(null);

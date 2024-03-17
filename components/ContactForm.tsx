@@ -1,12 +1,11 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
 import { useGSAP } from "@gsap/react";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import gsap from "gsap";
 import { FormEvent, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import { Spinner } from "@nextui-org/react";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

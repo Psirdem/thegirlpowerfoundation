@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Image from "next/image";
-import "../../../app/styles/girlPowerStyles.css";
-import Gallery from "@/components/Gallery";
+import "@/app/styles/girlPowerStyles.css";
 import DonationSection from "@/components/DonationSection";
-import NewsLetter from "@/components/NewsLetter";
 import Footer from "@/components/Footer";
-import { useRef } from "react";
+import Gallery from "@/components/Gallery";
+import NewsLetter from "@/components/NewsLetter";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,8 +88,8 @@ const GirlPowerProjectPage = () => {
         <div className="flex flex-col lg:flex-row gap-10 justify-between items-center p-4">
           <div>
             <Image
-              src="/assets/images/coast-img.webp"
-              alt="coast"
+              src="/assets/images/gp-4.webp"
+              alt="girl-power-pic"
               width={600}
               height={600}
               className="img rounded-xl shadow-2xl border-2 border-redColor"
@@ -167,11 +167,11 @@ const GirlPowerProjectPage = () => {
           </div>
           <div className="img">
             <Image
-              src="/assets/images/beach.webp"
+              src="/assets/images/gp-1.webp"
               width={700}
               height={700}
               className="rounded-xl shadow-2xl border-2 border-yellowColor"
-              alt="beach"
+              alt="girl-power-group-pic"
             />
           </div>
         </div>
