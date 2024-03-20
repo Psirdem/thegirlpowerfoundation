@@ -164,7 +164,6 @@ const HeroImageSlider = () => {
     "/assets/images/gp-4.webp",
     "/assets/images/hero-img.webp",
     "/assets/images/gp-3.webp",
-    "/assets/images/coast-img.webp",
     "/assets/images/mission.webp",
   ];
 

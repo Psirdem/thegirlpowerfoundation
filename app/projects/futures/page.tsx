@@ -8,6 +8,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import { useRef } from "react";
 import "../../../app/styles/futureStyles.css";
+import BrighterFutureGallery from "@/components/BrightFutureGallery";
 
 const FuturesPage = () => {
   const container = useRef(null);
@@ -58,7 +59,7 @@ const FuturesPage = () => {
           </div>
           <div>
             <Image
-              src="/assets/images/students-3.webp"
+              src="/assets/images/future-img-1.webp"
               width={600}
               height={600}
               alt="future"
@@ -67,6 +68,7 @@ const FuturesPage = () => {
           </div>
         </div>
       </div>
+      <BrighterFutureGallery />
       <DonationSection />
       <NewsLetter />
       <Footer />

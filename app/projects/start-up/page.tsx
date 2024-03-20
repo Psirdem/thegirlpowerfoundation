@@ -4,7 +4,9 @@
 import "@/app/styles/startupStyles.css";
 import DonationSection from "@/components/DonationSection";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 import NewsLetter from "@/components/NewsLetter";
+import StartUpGallery from "@/components/StartUpGallery";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -85,7 +87,7 @@ const StartUpPage = () => {
         <div className="top-box flex flex-col lg:flex-row gap-10 justify-between items-center p-4">
           <div>
             <Image
-              src="/assets/images/coast-img.webp"
+              src="/assets/images/startup-img-1.webp"
               width={600}
               height={600}
               alt="future"
@@ -137,15 +139,16 @@ const StartUpPage = () => {
           </div>
           <div>
             <Image
-              src="/assets/images/cta-img.webp"
+              src="/assets/images/startup-img-2.webp"
               width={600}
               height={600}
-              alt="future"
+              alt="startup"
               className="bottom-img rounded-xl shadow-2xl border-2 border-redColor"
             />
           </div>
         </div>
       </div>
+      <StartUpGallery />
       <DonationSection />
       <NewsLetter />
       <Footer />

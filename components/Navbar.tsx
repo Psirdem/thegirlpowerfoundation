@@ -77,7 +77,7 @@ const NavBar = () => {
 
   return (
     <Navbar
-      className="py-8"
+      className="py-4"
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
@@ -87,7 +87,11 @@ const NavBar = () => {
       </NavbarContent>
       <NavbarBrand className="mr-10">
         <a href="/">
-          <Image src={logo} alt="website logo" />
+          <Image
+            src={logo}
+            alt="website logo"
+            className="w-50 h-20 sm:w-60 sm:60"
+          />
         </a>
       </NavbarBrand>
       <NavbarContent
