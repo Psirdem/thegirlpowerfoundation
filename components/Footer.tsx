@@ -109,13 +109,17 @@ const Footer = () => {
 
         <div className="flex flex-col items-center justify-between gap-10">
           <address className="text-center flex flex-col items-center justify-center">
-            <p>Porridge and Pens © 2015 – {new Date().getFullYear()}</p>
-            <p>UK Registered Charity No. 1166497</p>
+            <p>
+              The Girl Power Foundation &copy; 2019 &mdash;{" "}
+              {new Date().getFullYear()}
+            </p>
+
             <ul>
-              <li>Porridge and Pens</li>
-              <li>1 Chapman Close,</li>
-              <li>Brightlingsea</li>
-              <li>Essex CO7 0FS</li>
+              <li>MR & MRS BAAH FREMPONG</li>
+              <li>RESIDENCE APPIADU &mdash; KUMASI</li>
+              <li>AK &mdash; 868 &mdash; 1207</li>
+              <li>PLOT NO. 21 BLOCK</li>
+              <li>POLICE 191 FIRE 192</li>
             </ul>
           </address>
         </div>
