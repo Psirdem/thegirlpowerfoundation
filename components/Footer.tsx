@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-10">
           <address className="text-center flex flex-col items-center justify-center">
             <p>
-              The Girl Power Foundation &copy; 2019 &mdash;{" "}
+              THE GIRL POWER FOUNDATION &copy; 2019 &mdash;{" "}
               {new Date().getFullYear()}
             </p>
 
@@ -119,7 +119,6 @@ const Footer = () => {
               <li>RESIDENCE APPIADU &mdash; KUMASI</li>
               <li>AK &mdash; 868 &mdash; 1207</li>
               <li>PLOT NO. 21 BLOCK</li>
-              <li>POLICE 191 FIRE 192</li>
             </ul>
           </address>
         </div>
