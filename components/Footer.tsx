@@ -120,6 +120,15 @@ const Footer = () => {
               <li>AK &mdash; 868 &mdash; 1207</li>
               <li>PLOT NO. 21 BLOCK</li>
             </ul>
+            <p className="text-redColor font-medium mt-2">
+              Email:{" "}
+              <a href="mailto:thegirlpowerfoundation@outlook.com">
+                thegirlpowerfoundation@outlook.com
+              </a>
+            </p>
+            <p className="text-redColor font-medium mt-1">
+              Phone: <span>+233</span>3598854
+            </p>
           </address>
         </div>
         <SponsorsSection />

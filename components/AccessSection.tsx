@@ -3,8 +3,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import accessImg from "@/public/assets/images/access.webp";
 
 const AccessSection = () => {
   const accessContainer = useRef(null);
@@ -60,7 +62,7 @@ const AccessSection = () => {
   return (
     <section id="access" className="text-blackColor my-8" ref={accessContainer}>
       <div className="flex flex-col lg:flex-row gap-12">
-        <div className="video order-1 lg:order-[0]">
+        {/* <div className="video order-1 lg:order-[0]">
           <iframe
             className="rounded-lg shadow-xl w-[310px] h-[180px] lg:w-[600px] lg:h-[350px]"
             width="560"
@@ -71,6 +73,15 @@ const AccessSection = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+        </div> */}
+        <div>
+          <Image
+            src={accessImg}
+            width={1000}
+            height={1000}
+            alt="access to education"
+            className="rounded-md"
+          />
         </div>
         <div>
           <div className="title">

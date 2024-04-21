@@ -7,7 +7,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
-import impactImg from "../public/assets/images/impact-img.webp";
+import impactImg from "../public/assets/images/impact.webp";
 import impactImg1 from "../public/assets/images/our-impact-1.webp";
 import impactImg2 from "../public/assets/images/our-impact-2.webp";
 import impactImg3 from "../public/assets/images/our-impact-3.webp";
@@ -80,13 +80,25 @@ const ImpactSection = () => {
       ref={impactContainer}
     >
       <div className="title mb-10">
-        <h2 className="text-2xl lg:text-4xl">Our impact In 2022</h2>
+        <h2 className="text-2xl lg:text-4xl">Our success story</h2>
         <div className="bg-redColor w-10 h-1 inline-block mr-1"></div>
         <div className="bg-yellowColor w-10 h-1 inline-block mr-1"></div>
         <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div className="flex flex-col gap-8">
+        <div className="video order-1 lg:order-[0]">
+          <iframe
+            className="rounded-lg shadow-xl w-[310px] h-[180px] lg:w-[600px] lg:h-[350px]"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BrQa1DD8Upc?si=om4fVA_noDkDNByh"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+        {/* <div className="flex flex-col gap-8">
           <div className="box-1 flex flex-col lg:flex-row gap-8 justify-center items-center">
             <Image
               className="rounded-full"
@@ -138,7 +150,7 @@ const ImpactSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="box-4 flex flex-col gap-8">
           <Image
             className="rounded-lg w-[700px] border-redColor border-2 shadow-2xl"

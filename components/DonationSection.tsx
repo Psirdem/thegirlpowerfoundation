@@ -58,7 +58,7 @@ const DonationSection = () => {
         <h3>Thank You For Supporting Our Work In Ghana.</h3>
         <div className="btn">
           <Link
-            href="/donate"
+            href="#"
             className="uppercase flex gap-3 bg-redColor px-8 py-3 rounded-lg font-bold tracking-wider text-xl justify-center w-60 text-white items-center hover:opacity-80 duration-500 transition-all"
           >
             <Image

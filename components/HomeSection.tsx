@@ -9,7 +9,7 @@ const HomeSection = () => {
       <AccessSection />
       <ProjectSection />
       <ImpactSection />
-      <SupportSection />
+      {/* <SupportSection /> */}
     </main>
   );
 };
