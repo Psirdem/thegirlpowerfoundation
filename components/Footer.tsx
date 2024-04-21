@@ -127,7 +127,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="text-redColor font-medium mt-1">
-              Phone: <span>+233</span>3598854
+              Phone: <span>+233</span> 24 359 8854
             </p>
           </address>
         </div>
