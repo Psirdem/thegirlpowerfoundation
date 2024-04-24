@@ -13,11 +13,11 @@ import Link from "next/link";
 import { useRef } from "react";
 
 import image4 from "@/public/assets/images/building-project.webp";
-import image1 from "@/public/assets/images/impact-img.webp";
+import image1 from "@/public/assets/images/gpp.webp";
 import image from "@/public/assets/images/project-future.webp";
 import image3 from "@/public/assets/images/project-hands.webp";
 import image2 from "@/public/assets/images/upcoming-projects.webp";
-import image5 from "@/public/assets/images/vocational-project-img.webp";
+import image5 from "@/public/assets/images/voc-img.jpg";
 import Image from "next/image";
 
 const projects = [

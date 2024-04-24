@@ -6,11 +6,11 @@ import gsap from "gsap";
 import { useRef } from "react";
 
 import { CardContent } from "@/components/ui/card";
-import image1 from "@/public/assets/images/impact-img.webp";
+import image1 from "@/public/assets/images/gpp.webp";
 import image2 from "@/public/assets/images/project-future.webp";
 import image3 from "@/public/assets/images/project-hands.webp";
 import image4 from "@/public/assets/images/building-project.webp";
-import image5 from "@/public/assets/images/vocational-project-img.webp";
+import image5 from "@/public/assets/images/voc-img.jpg";
 
 import { Card } from "@nextui-org/react";
 import Image from "next/image";
@@ -43,7 +43,7 @@ const projects = [
     image: image2,
   },
   {
-    title: "Vacational Training",
+    title: "Vocational Training",
     description:
       "We work with the families of the children we support to create sustainable, thriving communities and tackle unemployment in the Kumasi region. We help parents to secure a brighter future...",
     url: "/projects/vocation",

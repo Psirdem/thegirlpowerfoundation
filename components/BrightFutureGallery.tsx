@@ -13,6 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const images = [
   { src: "/assets/images/future-img-1.webp" },
   { src: "/assets/images/future-img-2.webp" },
+  { src: "/assets/images/future-img-3.webp" },
 ];
 
 const BrighterFutureGallery = () => {

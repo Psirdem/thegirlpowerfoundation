@@ -1,7 +1,7 @@
 import AccessSection from "./AccessSection";
 import ImpactSection from "./ImpactSection";
+import OurSuccessStory from "./OurSuccessStory";
 import ProjectSection from "./ProjectSection";
-import SupportSection from "./SupportSection";
 
 const HomeSection = () => {
   return (
@@ -9,7 +9,8 @@ const HomeSection = () => {
       <AccessSection />
       <ProjectSection />
       <ImpactSection />
-      {/* <SupportSection /> */}
+      <OurSuccessStory />
+     
     </main>
   );
 };

@@ -88,10 +88,10 @@ const VacationalTraining = () => {
         <div className="top-box flex flex-col lg:flex-row gap-10 justify-between items-center p-4">
           <div>
             <Image
-              src="/assets/images/startup.webp"
-              width={600}
-              height={600}
-              alt="future"
+              src="/assets/images/vocational-img.webp"
+              width={500}
+              height={400}
+              alt="vocational pic"
               className="top-img rounded-xl shadow-2xl border-2 border-greenColor"
             />
           </div>

@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import accessImg from "@/public/assets/images/access.webp";
+import accessImg from "@/public/assets/images/accesstoedu-img.webp";
 
 const AccessSection = () => {
   const accessContainer = useRef(null);
@@ -61,24 +61,12 @@ const AccessSection = () => {
 
   return (
     <section id="access" className="text-blackColor my-8" ref={accessContainer}>
-      <div className="flex flex-col lg:flex-row gap-12">
-        {/* <div className="video order-1 lg:order-[0]">
-          <iframe
-            className="rounded-lg shadow-xl w-[310px] h-[180px] lg:w-[600px] lg:h-[350px]"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/BrQa1DD8Upc?si=om4fVA_noDkDNByh"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        </div> */}
+      <div className="flex flex-col items-center lg:flex-row gap-12">
         <div>
           <Image
             src={accessImg}
-            width={1000}
-            height={1000}
+            width={500}
+            height={500}
             alt="access to education"
             className="rounded-md"
           />
@@ -97,8 +85,8 @@ const AccessSection = () => {
             </p>
             <p>
               It&apos;s why free and safe access to education is critical to
-              breaking the cycle of poverty. We are providing quality education
-              to over{" "}
+              breaking the cycle of poverty. <br /> We are providing quality
+              education to over{" "}
               <span className="font-bold">400 children and young people.</span>
             </p>
           </div>
