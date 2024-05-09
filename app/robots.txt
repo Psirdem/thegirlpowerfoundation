@@ -1,0 +1,15 @@
+User-Agent: *
+Disallow: 
+Allow: /
+Allow: /about/mission
+Allow: /about/vision
+Allow: /about/team
+Allow: /projects
+Allow: /projects/girl-power
+Allow: /projects/futures
+Allow: /projects/vocation
+Allow: /projects/start-up
+Allow: /projects/build
+Allow: /contact-us
+
+Sitemap: https://gpfoundationgh.org/sitemap.xml

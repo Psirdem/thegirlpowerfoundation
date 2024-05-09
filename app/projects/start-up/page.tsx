@@ -77,7 +77,7 @@ const StartUpPage = () => {
   return (
     <section className="start-up h-52 lg:h-72 text-blackColor" ref={container}>
       <header className="text-white gap-4 text-center z-10 flex justify-center items-center h-full flex-col px-4">
-        <h2 className="text text-4xl lg:text-5xl ">Start up Project.</h2>
+        <h2 className="text text-4xl lg:text-5xl ">Start Up Project.</h2>
         <p className="start-up-text lg:text-lg text-sm lg:w-1/2">
           More resilient and sustainable communities are critical to breaking
           the cycle of poverty.
@@ -100,17 +100,17 @@ const StartUpPage = () => {
               empowering aspiring entrepreneurs through multifaceted approach.
             </p>
             <p>
-              The programme emphasizes hands-on support, such as providing
+              The programme focuses hands-on support, such as providing
               necessary tools and resources. The team emphasizes individual
               needs, tailoring assistance to optimize business growth and
               development.
             </p>
             <p>
-              The initiative’s ultimate goal is to foster{" "}
+              We support{" "}
               <span className="font-semibold italic text-greenColor">
-                self-reliance and sustainable entrepreneurship
+                skilled and talented individuals
               </span>{" "}
-              within the community.
+              to build financially successful and sustainable businesses.
             </p>
           </div>
         </div>

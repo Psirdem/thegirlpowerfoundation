@@ -22,16 +22,28 @@ const poppins = Poppins({
 });
 
 const myFont = localFont({
-  src: "./Edosz.ttf",
+  src: "./Galano.ttf",
   display: "swap",
-  variable: "--font-edosz",
+  variable: "--font-galano",
 });
 
 export const metadata: Metadata = {
-  title: "The Girl Power Foundation",
+  generator: "Next.js",
+  applicationName: "The Girl Power Foundation Ghana",
+  referrer: "origin-when-cross-origin",
+  title: {
+    default: "Home | The Girl Power Foundation Ghana",
+    template: "%s | The Girl Power Foundation Ghana",
+  },
   description:
     "We provide food and education for some of the poorest children in Ghana through our Brightlingsea School, Girl Power and Fruit Drop projects.",
   icons: "/app/favicon-96x96.png",
+  metadataBase: new URL("https://gpfoundationgh.org"),
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({

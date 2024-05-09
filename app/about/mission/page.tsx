@@ -53,7 +53,7 @@ const MissionPage = () => {
           <p className="mission-text text-xl lg:text-3xl">
             Our mission is to provide{" "}
             <span className="text-redColor font-semibold italic">
-              children, girls and young adults
+              children and young adults
             </span>{" "}
             in Ghana with a{" "}
             <span className="text-yellowColor font-semibold italic">

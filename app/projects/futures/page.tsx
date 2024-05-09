@@ -37,15 +37,14 @@ const FuturesPage = () => {
   return (
     <section className="future h-52 lg:h-72 text-blackColor" ref={container}>
       <header className="z-10 flex justify-center items-center h-full">
-        <h2 className="text-white text-5xl">Brighter Future.</h2>
+        <h2 className="text-white text-5xl">Brighter Futures.</h2>
       </header>
       <div className="top-box max-w-screen-xl mx-auto py-10 container">
         <div className="flex flex-col lg:flex-row gap-10 justify-between p-4">
           <div className="future-text text flex-1 lg:text-xl flex flex-col gap-6">
             <p className="font-semibold text-greenColor">
-              The Brighter Futures Scholarship Programme, a subsidiary of the
-              Girl Power Foundation, is a dedicated initiative focused on
-              supporting male students in their pursuit of tertiary education.
+              Brighter Futures provides bright, determined young men with the
+              resources to attend university.
             </p>
             <p>
               With a commitment to fostering academic excellence and personal

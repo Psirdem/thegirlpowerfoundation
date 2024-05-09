@@ -149,17 +149,21 @@ const BuildingProjectPage = () => {
       </header>
       <div className="max-w-6xl container mx-auto px-10 py-8 lg:text-lg my-10">
         <p>
-          The Building project initiative of the foundation is dedicated to
-          acquiring a permanent facility of our own to accomodate our wokers as
-          well us some of our benefeciaries.
+          The Girl Power Foundation strives to build a permanent facility to
+          provide a dedicated space to accommodate the work of the foundation.
+          The Centre will provide office spaces, vocational classrooms,
+          emergency accommodation for our beneficiaries, permanent living
+          arrangement for some of our students and on site housing for Girl
+          Power staff. This is possible because of donations from our sponsors,
+          trusts and organisations. You can also help us :)
         </p>
-        <br />
+        {/* <br />
         <p>
           The project seeks to provide office spaces for our workers and housing
           to our benefeciaries. This is possible because of the donations from
           our sponsors. You can also help us complete this project on time by
           making a donation. Check the gallery to view our progress so far..
-        </p>
+        </p> */}
       </div>
       <BuildingGallery />
       <div className="max-w-6xl container mx-auto px-10 py-8 lg:text-lg my-10">

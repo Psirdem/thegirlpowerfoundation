@@ -77,7 +77,7 @@ const GirlPowerProjectPage = () => {
   return (
     <section className="team h-52 lg:h-72 text-blackColor" ref={container}>
       <header className="text-white gap-4 text-center z-10 flex justify-center items-center h-full flex-col px-4">
-        <h2 className="text-5xl">Girl Power Project.</h2>
+        <h2 className="text-5xl">Girl Power.</h2>
         <p className="lg:text-lg text-sm lg:w-1/2">
           In Kumasi, only 3% of girls complete higher education. Without this
           critical education, young women cannot achieve the careers they
@@ -116,7 +116,7 @@ const GirlPowerProjectPage = () => {
             <p>
               The project also organises seminars, counselling sessions and
               vocational training for girls as a means of adequately equipping
-              the girls for the ever-changing world. With girl Power the sky is
+              the girls for the ever-changing world. With Girl Power the sky is
               not the limit but the starting point.{" "}
               <span className="text-greenColor font-semibold italic">
                 EVERY GIRL CAN REACH FOR THE STAR.
@@ -167,7 +167,7 @@ const GirlPowerProjectPage = () => {
           </div>
           <div className="img">
             <Image
-              src="/assets/images/gp-1.webp"
+              src="/assets/images/staff.webp"
               width={700}
               height={700}
               className="rounded-xl shadow-2xl border-2 border-yellowColor"

@@ -42,7 +42,7 @@ const menuItems: { title: string; href: string }[] = [
     href: "/about/team",
   },
   {
-    title: "The Girl Power Project",
+    title: "Girl Power",
     href: "/projects/girl-power",
   },
   {
@@ -177,7 +177,7 @@ const NavBar = () => {
           >
             <DropdownItem key="usage_metrics">
               <Link className="font-semibold" href="/projects/girl-power">
-                The Girl Power Project
+                Girl Power
               </Link>
             </DropdownItem>
             <DropdownItem key="production_ready">

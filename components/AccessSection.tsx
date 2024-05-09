@@ -85,9 +85,13 @@ const AccessSection = () => {
             </p>
             <p>
               It&apos;s why free and safe access to education is critical to
-              breaking the cycle of poverty. <br /> We are providing quality
-              education to over{" "}
-              <span className="font-bold">400 children and young people.</span>
+              breaking the cycle of poverty. <br /> We provide access to
+              education for over 100 children and young adults through our Girl
+              Power Foundation projects. <br />
+              <span className="font-medium">
+                Girl Power and Brighter Futures and through our
+                vocational courses.
+              </span>
             </p>
           </div>
           <div className="btn">

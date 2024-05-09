@@ -97,8 +97,9 @@ const VacationalTraining = () => {
           </div>
           <div className="top-text text flex-1 lg:text-xl flex flex-col gap-6">
             <p className="font-semibold text-redColor">
-              The start-up initiative of the foundation is dedicated to
-              empowering aspiring entrepreneurs through multifaceted approach.
+              Our Vocational Training courses teach practical skills and provide
+              valuable work place learning to teach the expertise for a future
+              practical career.
             </p>
             <p>
               The programme emphasizes hands-on support, such as providing

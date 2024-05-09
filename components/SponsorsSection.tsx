@@ -49,7 +49,8 @@ const SponsorsSection = () => {
       </div>
       <div className="flex md:flex-row flex-col items-center justify-between gap-4 md:gap-10 text-xl">
         <h3 className="text-redColor">Porridge & Pens</h3>
-        <h3 className="text-greenColor">Children Salon</h3>
+        <h3 className="text-greenColor">Childrensalon</h3>
+        <h3 className="text-blackColor">Aramex</h3>
       </div>
     </section>
   );

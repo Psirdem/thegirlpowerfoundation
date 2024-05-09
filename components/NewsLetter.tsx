@@ -33,10 +33,9 @@ const NewsLetter = () => {
   return (
     <div id="news" className=" bg-greenColor text-white" ref={newsContainer}>
       <div className="flex flex-col justify-center items-center gap-2 py-12 text-center max-w-screen-2xl mx-auto px-10">
-        <h3 className="text-4xl mb-2">Subscribe To Our Upcoming Events</h3>
-        <p className="font-medium">
-          Stay informed about our in Ghana and our latest campaigns.
-        </p>
+        <h3 className="text-4xl mb-2">
+          Stay informed about our foundation projects and events{" "}
+        </h3>
 
         <Link
           className="px-8 py-3 text-center bg-yellowColor font-bold text-xl rounded text-blackColor uppercase mt-8 shadow-2xl btn"

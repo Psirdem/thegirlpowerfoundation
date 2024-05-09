@@ -88,7 +88,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="content flex flex-col lg:ml-20 text-center lg:text-left">
+        {/* <div className="content flex flex-col lg:ml-20 text-center lg:text-left">
           <h2 className="text-3xl mb-4">Make A Donation</h2>
           <p>
             We use Donation Manager to handle our donations so we pay less in
@@ -105,21 +105,16 @@ const Footer = () => {
               Donate
             </Link>
           </div>
-        </div>
+        </div> */}
 
         <div className="flex flex-col items-center justify-between gap-10">
           <address className="text-center flex flex-col items-center justify-center">
-            <p>
-              THE GIRL POWER FOUNDATION &copy; 2019 &mdash;{" "}
-              {new Date().getFullYear()}
-            </p>
-
-            <ul>
+            {/* <ul>
               <li>MR & MRS BAAH FREMPONG</li>
               <li>RESIDENCE APPIADU &mdash; KUMASI</li>
               <li>AK &mdash; 868 &mdash; 1207</li>
               <li>PLOT NO. 21 BLOCK</li>
-            </ul>
+            </ul> */}
             <p className="text-redColor font-medium mt-2">
               Email:{" "}
               <a href="mailto:thegirlpowerfoundation@outlook.com">
@@ -128,6 +123,10 @@ const Footer = () => {
             </p>
             <p className="text-redColor font-medium mt-1">
               Phone: <span>+233</span> 24 359 8854
+            </p>
+            <p>
+              THE GIRL POWER FOUNDATION &copy; 2019 &mdash;{" "}
+              {new Date().getFullYear()}
             </p>
           </address>
         </div>

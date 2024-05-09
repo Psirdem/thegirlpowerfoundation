@@ -92,7 +92,7 @@ const TeamPage = () => {
           <div className="flex flex-col gap-2">
             <h3 className="text-2xl">Lia Smith</h3>
             <small className="italic font-semibold text-gray-500">
-              Operations Manager
+              Operations Manager (UK)
             </small>
           </div>
         </div>
@@ -186,7 +186,7 @@ const TeamPage = () => {
             style={{ boxShadow: "-4px 4px 0px 4px #d01f39" }}
           />
           <div className="flex flex-col gap-2">
-            <h3 className="text-2xl">Shadrach Dome</h3>
+            <h3 className="text-2xl">Shadrack Dome</h3>
             <small className="italic font-semibold text-gray-500">
               Transport Manager
             </small>
@@ -240,13 +240,10 @@ const TeamPage = () => {
           <div className="staff-text bg-greenColor/85 text-white flex flex-col gap-4 p-8 shadow-2xl rounded-2xl flex-1 text-center justify-center items-center">
             <h2 className="text-3xl">Meet The Team</h2>
             <p>
-              Porridge and Pens is a UK non-profit organisation with its
-              headquarters in Essex, a coastal town called Brightlingsea.
-              Founded by Jemma Williams, as far back in 2009 upon her encounter
-              with a teenage girl who was subjected to a modern-day slavery in
-              the name of “house girl/help”. It is against this backdrop that
-              this organization was founded, coupled with gender inequalities
-              which is prevalent in Ghana.
+              Porridge and Pens, based in the UK and founded by Jemma Williams,
+              works in partnership with the Girl Power Foundation to enable
+              access to education for children and young people in Ghana through
+              their subsidiary projects.
             </p>
           </div>
         </div>
