@@ -11,9 +11,9 @@ const HomePage = () => {
     <>
       <Showcase />
       <HomeSection />
+      <AwardsCarousel />
       <DonationSection />
       <NewsLetter />
-      <AwardsCarousel />
       <Footer />
     </>
   );

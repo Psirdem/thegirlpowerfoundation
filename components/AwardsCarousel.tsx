@@ -19,7 +19,6 @@ const awardImages = [
   { src: "/assets/images/award_pic2.jpg" },
   { src: "/assets/images/award_pic3.jpg" },
   { src: "/assets/images/award_pic6.jpg" },
-  { src: "/assets/images/award_pic7.jpg" },
 ];
 
 const AwardGallery = () => {
@@ -70,6 +69,12 @@ const AwardGallery = () => {
           <div className="bg-greenColor w-10 h-1 inline-block mr-1"></div>
         </div>
       </div>
+      <p className=" text-center md:text-xl font-medium">
+        The Girl Power Foundation won the{" "}
+        <strong className="text-greenColor">Beacon of Hope Awards</strong>, in
+        November 2024, organised by{" "}
+        <strong className="text-redColor">Ghana Philanthropy Awards</strong>
+      </p>
       <div>
         {/* pics */}
 
