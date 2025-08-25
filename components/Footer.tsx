@@ -130,8 +130,8 @@ const Footer = () => {
             </p>
           </address>
         </div>
-        <SponsorsSection />
       </div>
+      <SponsorsSection />
     </footer>
   );
 };
