@@ -35,7 +35,6 @@ const moniImages = [
   { src: "/assets/images/moni-img-5.webp" },
   { src: "/assets/images/moni-img-1.webp" },
   { src: "/assets/images/moni-img-6.webp" },
-  { src: "/assets/images/moni-img-7.webp" },
   { src: "/assets/images/moni-img-8.webp" },
   { src: "/assets/images/moni-img-9.webp" },
 ];

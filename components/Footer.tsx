@@ -52,23 +52,19 @@ const Footer = () => {
       ref={footerContainer}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 my-10 place-items-center">
-        <div className="image flex flex-col gap-8">
+        <div className="image flex flex-col items-center justify-center gap-8">
           <a href="/">
             <Image
               src={logo}
               alt="website logo"
-              className="w-[200px] h-auto"
+              className="w-[600px] h-auto"
               priority
             />
           </a>
           <ul className="list flex items-center gap-5">
             <li className="bg-redColor p-1 rounded-full ">
               <a href="https://twitter.com/TheGirlPowerGH" target="_blank">
-                <img
-                  src="/assets/icons/x-icon.svg"
-                  alt="x icon"
-                  className="size-4"
-                />
+                <img src="/assets/icons/x-icon.svg" alt="x icon" />
               </a>
             </li>
             <li className="bg-redColor p-1 rounded-full ">
@@ -79,7 +75,6 @@ const Footer = () => {
                 <img
                   src="/assets/icons/instagram-icon.svg"
                   alt="instagram icon"
-                  className="size-4"
                 />
               </a>
             </li>
@@ -88,11 +83,7 @@ const Footer = () => {
                 href="https://www.youtube.com/channel/UCrV1px3tpwDWM2ODXC47TVQ"
                 target="_blank"
               >
-                <img
-                  src="/assets/icons/youtube-icon.svg"
-                  alt="youtube iocn"
-                  className="size-4"
-                />
+                <img src="/assets/icons/youtube-icon.svg" alt="youtube iocn" />
               </a>
             </li>
           </ul>
@@ -116,7 +107,7 @@ const Footer = () => {
           </div>
         </div> */}
 
-        <div className="flex flex-col items-center text-sm justify-between gap-10">
+        <div className="flex flex-col items-center justify-between gap-10">
           <address className="text-center flex flex-col items-center justify-center">
             {/* <ul>
               <li>MR & MRS BAAH FREMPONG</li>
